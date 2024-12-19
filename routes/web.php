@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoryProjectController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\PhotoController;
+use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -19,8 +22,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
-Route::prefix('dashboard')->name('admin.*')->group(function () {
+Route::prefix('dashboard')->name('admin.')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('home');
+    Route::resource('category-project', CategoryProjectController::class);
+    Route::resource('project', ProjectController::class);
+    Route::post('upload/new', [PhotoController::class, 'upload'])->name('image.upload');
+
 });
 
 require __DIR__ . '/auth.php';

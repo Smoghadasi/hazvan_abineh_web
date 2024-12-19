@@ -43,26 +43,27 @@
     />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="assets-sneat/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="{{ asset('assets-sneat/vendor/fonts/boxicons.css') }}" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="assets-sneat/vendor/css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="assets-sneat/vendor/css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="assets-sneat/css/demo.css" />
+    <link rel="stylesheet" href="{{ asset('assets-sneat/vendor/css/core.css') }}" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{{ asset('assets-sneat/vendor/css/theme-default.css') }}" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="{{ asset('assets-sneat/css/demo.css') }}" />
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="assets-sneat/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="{{ asset('assets-sneat/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
 
-    <link rel="stylesheet" href="assets-sneat/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="{{ asset('assets-sneat/vendor/libs/apex-charts/apex-charts.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets-sneat/css/persianDatepicker-default.css') }}"/>
 
     <!-- Page CSS -->
 
     <!-- Helpers -->
-    <script src="assets-sneat/vendor/js/helpers.js"></script>
+    <script src="{{ asset('assets-sneat/vendor/js/helpers.js') }}"></script>
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="assets-sneat/js/config.js"></script>
+    <script src="{{ asset('assets-sneat/js/config.js') }}"></script>
   </head>
 
   <body dir="rtl">
@@ -73,7 +74,7 @@
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
-            <a href="index.html" class="app-brand-link">
+            <a href="#" class="app-brand-link">
               <span class="app-brand-logo demo">
                 <svg
                   width="25"
@@ -141,39 +142,54 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
-            <li class="menu-item active">
-              <a href="index.html" class="menu-link">
+            <li class="menu-item">
+              <a href="#" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">داشبورد</div>
               </a>
             </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                  <div data-i18n="Analytics">خدمات</div>
+                </a>
+            </li>
 
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                  <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                  <div data-i18n="Account Settings">پروژه</div>
+                </a>
+                <ul class="menu-sub">
+                  <li class="menu-item">
+                    <a href="{{ route('admin.project.index') }}" class="menu-link">
+                      <div data-i18n="Account">لیست پروژه</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="{{ route('admin.category-project.index') }}" class="menu-link">
+                      <div data-i18n="Notifications">دسته بندی پروژه</div>
+                    </a>
+                  </li>
 
-
-
+                </ul>
+            </li>
 
             <!-- Misc -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">امکانات</span></li>
             <li class="menu-item">
-              <a
-                href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
-                target="_blank"
-                class="menu-link"
-              >
-                <i class="menu-icon tf-icons bx bx-support"></i>
-                <div data-i18n="Support">Support</div>
-              </a>
+                <a href="#" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                  <div data-i18n="Analytics">کاربران</div>
+                </a>
             </li>
             <li class="menu-item">
-              <a
-                href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
-                target="_blank"
-                class="menu-link"
-              >
-                <i class="menu-icon tf-icons bx bx-file"></i>
-                <div data-i18n="Documentation">Documentation</div>
-              </a>
+                <a href="#" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                  <div data-i18n="Analytics">تماس با ما</div>
+                </a>
             </li>
+
           </ul>
         </aside>
         <!-- / Menu -->
@@ -206,7 +222,7 @@
                     <li class="nav-item navbar-dropdown dropdown-user dropdown">
                         <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                             <div class="avatar avatar-online">
-                                <img src="assets-sneat/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle">
+                                <img src="{{ asset('assets-sneat/img/avatars/1.png') }}" alt class="w-px-40 h-auto rounded-circle">
                             </div>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end new-style-13">
@@ -215,7 +231,7 @@
                                     <div class="d-flex">
                                         <div class="flex-shrink-0 me-3">
                                             <div class="avatar avatar-online">
-                                                <img src="assets-sneat/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle">
+                                                <img src="{{ asset('assets-sneat/img/avatars/1.png') }}" alt class="w-px-40 h-auto rounded-circle">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
@@ -300,22 +316,24 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-    <script src="assets-sneat/vendor/libs/jquery/jquery.js"></script>
-    <script src="assets-sneat/vendor/libs/popper/popper.js"></script>
-    <script src="assets-sneat/vendor/js/bootstrap.js"></script>
-    <script src="assets-sneat/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="{{ asset('assets-sneat/vendor/libs/jquery/jquery.js') }}"></script>
+    <script src="{{ asset('assets-sneat/vendor/libs/popper/popper.js') }}"></script>
+    <script src="{{ asset('assets-sneat/vendor/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('assets-sneat/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
 
-    <script src="assets-sneat/vendor/js/menu.js"></script>
+    <script src="{{ asset('assets-sneat/vendor/js/menu.js') }}"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="assets-sneat/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="{{ asset('assets-sneat/vendor/libs/apex-charts/apexcharts.js') }}"></script>
+    <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
 
     <!-- Main JS -->
-    <script src="assets-sneat/js/main.js"></script>
+    <script src="{{ asset('assets-sneat/js/main.js') }}"></script>
 
     <!-- Page JS -->
-    <script src="assets-sneat/js/dashboards-analytics.js"></script>
+    <script src="{{ asset('assets-sneat/js/dashboards-analytics.js') }}"></script>
+    @yield('script')
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
