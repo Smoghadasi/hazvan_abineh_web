@@ -178,9 +178,9 @@
             <!-- Misc -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">امکانات</span></li>
             <li class="menu-item">
-                <a href="#" class="menu-link">
-                  <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                  <div data-i18n="Analytics">کاربران</div>
+                <a href="{{ route('admin.team.index') }}" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-user-circle"></i>
+                  <div data-i18n="Analytics">اعضای تیم</div>
                 </a>
             </li>
             <li class="menu-item">
