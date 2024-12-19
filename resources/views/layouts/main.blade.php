@@ -64,7 +64,7 @@
             <button class="et-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
                 <a href="#">
-                    <img src="assets/img/logo.svg" alt="ironCon" />
+                    <img src="{{ asset('assets/img/logo-basic.png') }}" alt="ironCon" />
                 </a>
             </div>
             <nav class="et-mobile-menu">
@@ -89,10 +89,10 @@
             <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
             <div class="widget">
                 <div class="et-widget-about">
-                    <div class="about-logo"> <a href="#"><img src="assets/img/logo.svg" alt="ironCon" /></a>
+                    <div class="about-logo"> <a href="#"><img src="{{ asset('assets/img/logo-basic.png') }}" alt="ironCon" /></a>
                     </div>
-                    <p class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                        استفاده از طراحان گرافیک است، چاپگرها و
+                    <p class="text">
+                        مهندسين مشاور هزوان ابنیه
                     </p>
                 </div>
             </div>
@@ -103,25 +103,25 @@
                         <div class="icon"> <i class="fa-solid fa-location-dot"></i> </div>
                         <div class="details"> <a
                                 href="https://www.google.com/maps/place/Egens+Lab/@23.8340712,90.3631117,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c14c8682a473:0xa6c74743d52adb88!8m2!3d23.8340663!4d90.3656866!16s%2Fg%2F11rs9vlwsk?entry=ttu">
-                                تهران، بلوار آزادی، خیابان ایران </a>
+                                تهران، خیابان ولیعصر، نرسیده به توانیر، پلاک ۲۴۸۶
+                                مجتمع اداری تجاری طلوع، طبقه سوم، واحد ۳۰۶
+                                 </a>
                         </div>
                     </div>
                     <div class="info-box_text">
                         <div class="icon"> <i class="fa-solid fa-phone"></i> </div>
                         <div class="details">
-                            <p><a href="tel:09123456789" class="info-box_link">09123456789</a></p>
-                            <p><a href="tel:09129876543" class="info-box_link">09129876543</a></p>
+                            <p><a href="tel:02188883995" class="info-box_link">۰۲۱-۸۸۸۸۳۹۹۵</a></p>
+                            <p><a href="tel:02188883996" class="info-box_link">۰۲۱-۸۸۸۸۳۹۹۶</a></p>
                         </div>
                     </div>
                     <div class="info-box_text">
                         <div class="icon"> <i class="fa-solid fa-envelope"></i> </div>
                         <div class="details">
-                            <p> <a href="mailto:somemail@gmail.com" class="info-box_link"><span
-                                        class="__cf_email__">somemail@gmail.com</span></a>
+                            <p> <a href="mailto:hazvanabnieh@gmail.com" class="info-box_link"><span
+                                        class="__cf_email__">hazvanabnieh@gmail.com</span></a>
                             </p>
-                            <p> <a href="mailto:somemail@gmail.com" class="info-box_link"><span
-                                        class="__cf_email__">somemail@gmail.com</span></a>
-                            </p>
+
                         </div>
                     </div>
                 </div>

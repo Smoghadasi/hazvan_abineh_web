@@ -4553,7 +4553,7 @@ textarea.is-invalid {
 .header-layout1 .menu-area .header-logo a img {
   position: relative;
   z-index: 3;
-  width: 155px;
+  width: 90px;
 }
 @media (max-width: 991px) {
   .header-layout1 .menu-area .header-logo {

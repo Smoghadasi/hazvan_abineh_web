@@ -6,8 +6,10 @@
             <div class="menu-area">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto">
-                        <div class="header-logo"> <a href="#"> <img src="assets/img/logo.svg"
-                                    alt="ironCon" /> </a>
+                        <div class="header-logo">
+                            <a href="#">
+                                <img width="50" src="{{ asset('assets/img/logo-basic.png') }}" alt="ironCon" />
+                            </a>
                         </div>
                     </div>
                     <div class="col-auto">
@@ -41,7 +43,7 @@
                             </select>
                             <div class="info-text">
                                 <p>مشاوره میخوای؟</p>
-                                <h4><a href="tel:09123456789">09123456789</a></h4>
+                                <h4><a href="tel:02188883995">۰۲۱-۸۸۸۸۳۹۹۵</a></h4>
                             </div>
                         </div>
                     </div>
