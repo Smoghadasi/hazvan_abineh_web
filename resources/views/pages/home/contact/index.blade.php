@@ -9,7 +9,7 @@
                             <h1 class="wow fadeInUp" data-wow-delay=".3s">تماس با ما</h1>
                             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                                 <li>
-                                    <a href="index.html">
+                                    <a href="/">
                                         صفحه اصلی
                                     </a>
                                 </li>
@@ -45,7 +45,6 @@
                             <div class="item">
                                 <h6>تماس با ما</h6>
                                 <a href="tel:02188883995">02188883995</a>
-                                <a href="tel:09129876543">09129876543</a>
                             </div>
                         </div>
                         <div class="contact-meta">
@@ -54,8 +53,8 @@
                             </div>
                             <div class="item">
                                 <h6>ایمیل</h6>
-                                <a href="mailto:somemail@gmail.com"><span class="__cf_email__">somemail@gmail.com</span></a>
-                                <a href="mailto:somemail@gmail.com"><span class="__cf_email__">somemail@gmail.com</span></a>
+                                <a href="mailto:hazvanabnieh@gmail.com"><span
+                                        class="__cf_email__">hazvanabnieh@gmail.com</span></a>
                             </div>
                         </div>
                         <div class="contact-meta">
@@ -65,7 +64,8 @@
                             <div class="item">
                                 <h6>آدرس دفتر</h6>
                                 <a href="https://maps.app.goo.gl/TueKT2yUtNfv8Xin6">
-                                    ایران، تهران، برج میلاد
+                                    تهران، خیابان ولیعصر، نرسیده به توانیر، پلاک ۲۴۸۶ مجتمع اداری تجاری طلوع، طبقه سوم، واحد
+                                    ۳۰۶
                                 </a>
                             </div>
                         </div>
@@ -77,7 +77,8 @@
                             <h6 class="subtitle wow fadeInUp" data-wow-delay="0.3s">در ارتباط باش</h6>
                             <h2 class="title text-title mb-4 wow fadeInUp" data-wow-delay="0.6s">چیزی برامون بنویس</h2>
                         </div>
-                        <form id="contact-form" method="post">
+                        <form action="{{ route('home.contactUs.store') }}" method="post">
+                            @csrf
                             <div class="row g-3">
                                 <div class="col-lg-6">
                                     <div class="form-clt">
@@ -93,12 +94,12 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-clt">
-                                        <input type="number" name="phone" id="number" placeholder="شماره تلفن"
+                                        <input type="number" name="tel" id="tel" placeholder="شماره تلفن"
                                             required />
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <select name="services" class="single-select" aria-label="select service" required>
+                                    <select name="category" class="single-select" aria-label="select service" required>
                                         <option value="نامشخص" selected="selected">یکی از خدمات را انتخاب کن</option>
                                         <option value="ساختمان سازی">ساختمان سازی</option>
                                         <option value="روف گاردن">روف گاردن</option>

@@ -7,7 +7,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto">
                         <div class="header-logo">
-                            <a href="#">
+                            <a href="/">
                                 <img width="50" src="{{ asset('assets/img/logo-basic.png') }}" alt="ironCon" />
                             </a>
                         </div>
@@ -16,13 +16,13 @@
                         <nav class="main-menu d-none d-xl-inline-block">
                             <ul>
                                 <li class="menu-item-has-children">
-                                <li><a class="active" href="{{ route('home') }}">صفحه اصلی </a>
+                                <li><a href="{{ route('home') }}">صفحه اصلی </a>
                                 </li>
                                 </li>
                                 <li><a href="{{ route('home.about') }}">درباره ما </a></li>
                                 <li><a href="{{ route('home.services') }}">خدمات</a></li>
                                 <li><a href="{{ route('home.project') }}"> پروژه ها </a></li>
-                                <li><a href="{{ route('home.contactUs') }}">تماس با ما</a></li>
+                                <li><a href="{{ route('home.contactUs.index') }}">تماس با ما</a></li>
                             </ul>
                         </nav>
                         <div class="header-button d-flex d-xl-none"> <button type="button"

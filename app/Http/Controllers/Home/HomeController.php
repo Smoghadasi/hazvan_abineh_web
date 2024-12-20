@@ -20,10 +20,7 @@ class HomeController extends Controller
     {
         return view('pages.home.services.index');
     }
-    public function contact()
-    {
-        return view('pages.home.contact.index');
-    }
+
     public function project()
     {
         return view('pages.home.project.index');

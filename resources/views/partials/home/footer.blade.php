@@ -115,8 +115,8 @@
                                             <div class="single-contact_widget-title">
                                                 <h5>ایمیل</h5>
                                             </div>
-                                            <a href="mailto:somemail@gmail.com"><span
-                                                    class="__cf_email__">somemail@gmail.com</span></a>
+                                            <a href="mailto:hazvanabnieh@gmail.com"><span
+                                                    class="__cf_email__">hazvanabnieh@gmail.com</span></a>
                                         </div>
                                     </div>
                                     <div class="single-contact mb-30">
