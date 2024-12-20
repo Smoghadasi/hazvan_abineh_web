@@ -217,7 +217,7 @@
                                     <img src="assets/img/icon/aboutIcon1_3.svg" alt="icon" />
                                     <div class="contact-us-text">
                                         <h5 class="mb-1">پشتیبانی 24/7</h5>
-                                        <h4><a href="tel:09123456789">09123456789</a>
+                                        <h4><a href="tel:02188883995">02188883995</a>
                                         </h4>
                                     </div>
                                 </div>

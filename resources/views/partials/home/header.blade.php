@@ -16,13 +16,13 @@
                         <nav class="main-menu d-none d-xl-inline-block">
                             <ul>
                                 <li class="menu-item-has-children">
-                                <li><a class="active" href="#">صفحه اصلی </a>
+                                <li><a class="active" href="{{ route('home') }}">صفحه اصلی </a>
                                 </li>
                                 </li>
-                                <li><a href="#">درباره ما </a></li>
-                                <li><a href="services.html">خدمات</a></li>
-                                <li><a href="#"> پروژه ها </a></li>
-                                <li><a href="#">تماس با ما</a></li>
+                                <li><a href="{{ route('home.about') }}">درباره ما </a></li>
+                                <li><a href="{{ route('home.services') }}">خدمات</a></li>
+                                <li><a href="{{ route('home.project') }}"> پروژه ها </a></li>
+                                <li><a href="{{ route('home.contactUs') }}">تماس با ما</a></li>
                             </ul>
                         </nav>
                         <div class="header-button d-flex d-xl-none"> <button type="button"

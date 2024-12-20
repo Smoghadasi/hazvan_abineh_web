@@ -89,7 +89,8 @@
             <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
             <div class="widget">
                 <div class="et-widget-about">
-                    <div class="about-logo"> <a href="#"><img src="{{ asset('assets/img/logo-basic.png') }}" alt="ironCon" /></a>
+                    <div class="about-logo"> <a href="#"><img src="{{ asset('assets/img/logo-basic.png') }}"
+                                alt="ironCon" /></a>
                     </div>
                     <p class="text">
                         مهندسين مشاور هزوان ابنیه
@@ -105,7 +106,7 @@
                                 href="https://www.google.com/maps/place/Egens+Lab/@23.8340712,90.3631117,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c14c8682a473:0xa6c74743d52adb88!8m2!3d23.8340663!4d90.3656866!16s%2Fg%2F11rs9vlwsk?entry=ttu">
                                 تهران، خیابان ولیعصر، نرسیده به توانیر، پلاک ۲۴۸۶
                                 مجتمع اداری تجاری طلوع، طبقه سوم، واحد ۳۰۶
-                                 </a>
+                            </a>
                         </div>
                     </div>
                     <div class="info-box_text">
@@ -143,9 +144,7 @@
          Main Start
          ==============================-->
     <main class="main position-relative" id="mains">
-
         @yield('content')
-
     </main>
     <!--==============================
          Main End
