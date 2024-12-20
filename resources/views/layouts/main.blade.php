@@ -64,7 +64,7 @@
             <button class="et-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
                 <a href="#">
-                    <img src="{{ asset('assets/img/logo-basic.png') }}" alt="ironCon" />
+                    <img src="{{ asset('assets/img/logo-basic.png') }}" alt="هزوان ابنیه" />
                 </a>
             </div>
             <nav class="et-mobile-menu">
@@ -90,7 +90,7 @@
             <div class="widget">
                 <div class="et-widget-about">
                     <div class="about-logo"> <a href="#"><img src="{{ asset('assets/img/logo-basic.png') }}"
-                                alt="ironCon" /></a>
+                                alt="هزوان ابنیه" /></a>
                     </div>
                     <p class="text">
                         مهندسين مشاور هزوان ابنیه
@@ -150,8 +150,6 @@
          Main End
          ==============================-->
     @include('partials.home.footer')
-    Code End Here
-    ******************************** -->
     <!-- Scroll To Top -->
     <div class="scroll-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

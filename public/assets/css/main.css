@@ -1,5 +1,5 @@
 /*
-Theme Name: IronCon
+Theme Name: هزوان ابنیه
 Author: Egenstheme
 Author URI: https://www.rtl-theme.com/author/mostafa_sharafian
 Description: آیرونکن - قالب خدمات ساخت و ساز
@@ -4785,7 +4785,7 @@ textarea.is-invalid {
 .copyright-wrap {
   padding: 20px 0 5px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  background: var(--theme-color);
+  /* background: var(--theme-color); */
 }
 .copyright-wrap.style2 {
   margin-top: 75px;
@@ -6251,7 +6251,7 @@ textarea.is-invalid {
   margin-bottom: 35px;
 }
 .et-widget-about .about-logo a img{
-width: 155px;
+width: 95px;
 }
 .et-widget-about .text {
   margin-bottom: 30px;

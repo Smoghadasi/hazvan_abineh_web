@@ -21,7 +21,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label class="form-label">نام</label>
-                            <input type="text" class="form-control" name="name" />
+                            <input type="text" class="form-control" name="title" />
                         </div>
                         <div class="col-md-6 mb-3">
                             <label class="form-label">خلاصه توضیحات</label>

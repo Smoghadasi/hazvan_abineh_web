@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Home\ContactUsController as HomeContactUsController;
 use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\Home\ServiceController as HomeServiceController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,7 +29,8 @@ Route::prefix('pages')->name('home.')->group(function () {
     Route::get('about', [HomeController::class, 'about'])->name('about');
     Route::get('contact-us', [HomeContactUsController::class, 'index'])->name('contactUs.index');
     Route::post('contact-us', [HomeContactUsController::class, 'store'])->name('contactUs.store');
-    Route::get('services', [HomeController::class, 'services'])->name('services');
+    Route::get('services', [HomeServiceController::class, 'index'])->name('service.index');
+    Route::get('services/{service}', [HomeServiceController::class, 'show'])->name('service.show');
     Route::get('project', [HomeController::class, 'project'])->name('project');
 });
 

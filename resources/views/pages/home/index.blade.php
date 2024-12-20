@@ -23,7 +23,7 @@
                                             چاپگرها و متون بلکه روزنامه و مجله
                                             در ستون و سطرآنچنان که
                                         </p>
-                                        <a href="#" class="et-btn style2">درباره ما</a>
+                                        <a href="{{ route('home.about') }}" class="et-btn style2">درباره ما</a>
                                     </div>
                                 </div>
                             </div>
@@ -86,54 +86,26 @@
         <div class="service-wrapper style1">
             <div class="container">
                 <div class="row gy-30 gx-30">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="service-card-icon">
-                                <img src="assets/img/icon/serviceIcon1_1.svg" alt="icon" />
-                            </div>
-                            <div class="service-card-body">
-                                <h3 class="title"><a href="service-details.html"> ساخت و
-                                        ساز ساختمان </a>
-                                </h3>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                                </p>
-                                <a href="service-details.html" class="et-btn style3">
-                                    مطالعه بیشتر <i class="fa-regular fa-arrow-left"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-card style1 wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="service-card-icon">
-                                <img src="assets/img/icon/serviceIcon1_2.svg" alt="icon" />
-                            </div>
-                            <div class="service-card-body">
-                                <h3 class="title"><a href="service-details.html"> مدیریت
-                                        ساخت و ساز </a>
-                                </h3>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                                </p>
-                                <a href="service-details.html" class="et-btn style3">
-                                    مطالعه بیشتر <i class="fa-regular fa-arrow-left"></i></a>
+                    @foreach ($services as $service)
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-card style1 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="service-card-icon">
+                                    <img src="/assets/img/icon/serviceIcon1_{{ rand(1, 6) }}.svg" alt="icon" />
+                                </div>
+                                <div class="service-card-body">
+                                    <h3 class="title"><a
+                                            href="{{ route('home.service.show', $service) }}">{{ $service->title ?? '-' }}</a>
+                                    </h3>
+                                    <p>
+                                        {{ $service->meta_description ?? '-' }}
+                                    </p>
+                                    <a href="{{ route('home.service.show', $service) }}" class="et-btn style3">
+                                        مطالعه بیشتر <i class="fa-regular fa-arrow-left"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-card style1 wow fadeInUp" data-wow-delay="0.9s">
-                            <div class="service-card-icon">
-                                <img src="assets/img/icon/serviceIcon1_3.svg" alt="icon" />
-                            </div>
-                            <div class="service-card-body">
-                                <h3 class="title"><a href="service-details.html"> نوسازی
-                                        ساختمان</a>
-                                </h3>
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                                </p>
-                                <a href="service-details.html" class="et-btn style3">
-                                    مطالعه بیشتر <i class="fa-regular fa-arrow-left"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>
@@ -455,62 +427,22 @@
                     </h2>
                 </div>
                 <div class="row gy-30 gx-30">
-                    <div class="col-lg-4">
-                        <div class="project-thumb wow fadeInUp" data-wow-delay="0.3s">
-                            <img class="thumb1" src="assets/img/project/projectThumb1_1.png" alt="thumb" />
-                            <div class="thumb-content">
-                                <p>ساخت و ساز</p>
-                                <h3><a href="project-details.html">ساخت منزل مسکونی </a>
-                                </h3>
-                                <a href="project-details.html" class="link-btn">
-                                    مطالعه بیشتر
-                                    <i class="fa-regular fa-arrow-left"></i>
-                                </a>
+                    @foreach ($projects as $project)
+                        <div class="col-lg-4">
+                            <div class="project-thumb wow fadeInUp" data-wow-delay="0.3s">
+                                <img class="thumb1" src="{{ asset('uploads/' . $project->photo_url) }}" alt="thumb" />
+                                <div class="thumb-content">
+                                    <p>{{ $project->categoryProject->title }}</p>
+                                    <h3><a href="#">{{ $project->title ?? '-' }} </a></h3>
+                                    <a href="#" class="link-btn">
+                                        مطالعه بیشتر
+                                        <i class="fa-regular fa-arrow-left"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="project-thumb wow fadeInUp" data-wow-delay="0.6s">
-                            <img class="thumb2" src="assets/img/project/projectThumb1_2.png" alt="thumb" />
-                            <div class="thumb-content">
-                                <p>ساخت و ساز</p>
-                                <h3><a href="project-details.html">ساخت منزل مسکونی </a>
-                                </h3>
-                                <a href="project-details.html" class="link-btn">
-                                    مطالعه بیشتر
-                                    <i class="fa-regular fa-arrow-left"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="project-thumb wow fadeInUp" data-wow-delay="0.3s">
-                            <img class="thumb3" src="assets/img/project/projectThumb1_3.png" alt="thumb" />
-                            <div class="thumb-content">
-                                <p>ساخت و ساز</p>
-                                <h3><a href="project-details.html">ساخت منزل مسکونی </a>
-                                </h3>
-                                <a href="project-details.html" class="link-btn">
-                                    مطالعه بیشتر
-                                    <i class="fa-regular fa-arrow-left"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="project-thumb wow fadeInUp" data-wow-delay="0.6s">
-                            <img class="thumb4" src="assets/img/project/projectThumb1_4.png" alt="thumb" />
-                            <div class="thumb-content">
-                                <p>ساخت و ساز</p>
-                                <h3><a href="project-details.html">ساخت منزل مسکونی </a>
-                                </h3>
-                                <a href="project-details.html" class="link-btn">
-                                    مطالعه بیشتر
-                                    <i class="fa-regular fa-arrow-left"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>
@@ -537,87 +469,22 @@
                     پل بساز</h2>
             </div>
             <div class="row gy-5">
-                <div class="col-xl-4">
-                    <div class="team-card style1">
-                        <div class="team-thumb">
-                            <img src="assets/img/team/teamThumb1_1.jpg" alt="thumb" />
-                        </div>
-                        <div class="team-content">
-                            <div class="title">
-                                <h4>آریا ایرانی</h4>
-                                <p>طراح وبسایت</p>
+                @foreach ($teams as $team)
+                    <div class="col-xl-4">
+                        <div class="team-card style1">
+                            <div class="team-thumb">
+                                <img src="{{ asset('uploads/' . $team->photo_url) }}" alt="thumb" />
                             </div>
-                            <div class="social-profile">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                                <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
+                            <div class="team-content">
+                                <div class="title">
+                                    <h4>{{ $team->name }}</h4>
+                                    <p>{{ $team->job }}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="team-card style1">
-                        <div class="team-thumb">
-                            <img src="assets/img/team/teamThumb1_2.jpg" alt="thumb" />
-                        </div>
-                        <div class="team-content">
-                            <div class="title">
-                                <h4>کامران میرانی</h4>
-                                <p>مدیر</p>
-                            </div>
-                            <div class="social-profile">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                                <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="team-card style1">
-                        <div class="team-thumb">
-                            <img src="assets/img/team/teamThumb1_3.jpg" alt="thumb" />
-                        </div>
-                        <div class="team-content">
-                            <div class="title">
-                                <h4>روزبه بهرنگ</h4>
-                                <p>مهندس معمار</p>
-                            </div>
-                            <div class="social-profile">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                                <span class="plus-btn"><i class="fas fa-share-alt"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
         </div>
     </section>
@@ -632,13 +499,7 @@
                             <div class="swiper-slide">
                                 <div class="testimonial_card style1">
                                     <div class="testimonial_body">
-                                        <ul class="star-wrap">
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star2.svg" alt="icon" /></li>
-                                        </ul>
+
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی
                                             نامفهوم از صنعت چاپ، و با استفاده از
                                             طراحان گرافیک است، چاپگرها و متون
@@ -663,13 +524,7 @@
                             <div class="swiper-slide">
                                 <div class="testimonial_card style1">
                                     <div class="testimonial_body">
-                                        <ul class="star-wrap">
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star2.svg" alt="icon" /></li>
-                                        </ul>
+
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی
                                             نامفهوم از صنعت چاپ، و با استفاده از
                                             طراحان گرافیک است، چاپگرها و متون
@@ -694,13 +549,7 @@
                             <div class="swiper-slide">
                                 <div class="testimonial_card style1">
                                     <div class="testimonial_body">
-                                        <ul class="star-wrap">
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star2.svg" alt="icon" /></li>
-                                        </ul>
+
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی
                                             نامفهوم از صنعت چاپ، و با استفاده از
                                             طراحان گرافیک است، چاپگرها و متون
@@ -725,13 +574,7 @@
                             <div class="swiper-slide">
                                 <div class="testimonial_card style1">
                                     <div class="testimonial_body">
-                                        <ul class="star-wrap">
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star.svg" alt="icon" /></li>
-                                            <li><img src="assets/img/icon/star2.svg" alt="icon" /></li>
-                                        </ul>
+
                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی
                                             نامفهوم از صنعت چاپ، و با استفاده از
                                             طراحان گرافیک است، چاپگرها و متون

@@ -8,7 +8,7 @@
                     <div class="col-auto">
                         <div class="header-logo">
                             <a href="/">
-                                <img width="50" src="{{ asset('assets/img/logo-basic.png') }}" alt="ironCon" />
+                                <img width="50" src="{{ asset('assets/img/logo-basic.png') }}" alt="هزوان ابنیه" />
                             </a>
                         </div>
                     </div>
@@ -20,7 +20,7 @@
                                 </li>
                                 </li>
                                 <li><a href="{{ route('home.about') }}">درباره ما </a></li>
-                                <li><a href="{{ route('home.services') }}">خدمات</a></li>
+                                <li><a href="{{ route('home.service.index') }}">خدمات</a></li>
                                 <li><a href="{{ route('home.project') }}"> پروژه ها </a></li>
                                 <li><a href="{{ route('home.contactUs.index') }}">تماس با ما</a></li>
                             </ul>
