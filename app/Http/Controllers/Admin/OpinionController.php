@@ -3,18 +3,18 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Service;
+use App\Models\Opinion;
 use Illuminate\Http\Request;
 
-class ServiceController extends Controller
+class OpinionController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $services = Service::orderByDesc('created_at')->paginate(20);
-        return view('pages.dashboard.service.index', compact('services'));
+        $opinions = Opinion::paginate(20);
+        return view('pages.dashboard.opinion.index', compact('opinions'));
     }
 
     /**
@@ -22,7 +22,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        return view('pages.dashboard.service.create');
+        return view('pages.dashboard.opinion.create');
     }
 
     /**
@@ -30,17 +30,18 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-        $service = new Service();
+        $opinion = new Opinion();
         if ($file = $request->file('photo_url')) {
             $name = time() . preg_replace('/\s+/', '', $file->getClientOriginalName());
             $file->move('uploads', $name);
-            $service->photo_url = $name;
+            $opinion->photo_url = $name;
         }
-        $service->title = $request->title;
-        $service->meta_description = $request->meta_description;
-        $service->description = $request->description;
-        $service->save();
-        return redirect()->route('admin.service.index')->with('success', 'با موفقیت ثبت شد');
+        $opinion->name = $request->name;
+        $opinion->description = $request->description;
+        $opinion->job = $request->job;
+        $opinion->save();
+        return redirect()->route('admin.opinion.index')->with('success', 'با موفقیت ثبت شد');
+
     }
 
     /**

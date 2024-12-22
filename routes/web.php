@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\CategoryProjectController;
 use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\OpinionController;
 use App\Http\Controllers\Admin\PhotoController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\ServiceController;
@@ -40,6 +41,7 @@ Route::prefix('dashboard')->name('admin.')->group(function () {
     Route::resource('category-project', CategoryProjectController::class);
     Route::resource('project', ProjectController::class);
     Route::resource('team', TeamController::class);
+    Route::resource('opinion', OpinionController::class);
     Route::resource('service', ServiceController::class);
     Route::get('contact-us', [ContactUsController::class, 'index'])->name('contactUs.index');
     Route::post('upload/new', [PhotoController::class, 'upload'])->name('image.upload');

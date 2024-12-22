@@ -49,7 +49,7 @@ class ProjectController extends Controller
         $project->description = $request->description;
         $project->save();
 
-        return redirect()->route('admin.project.index')->with('danger', 'صاحب بار مورد نظر حذف شد');
+        return redirect()->route('admin.project.index')->with('success', 'با موفقیت ثبت شد');
     }
 
     /**
