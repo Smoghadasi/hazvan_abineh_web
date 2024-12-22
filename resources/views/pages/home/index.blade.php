@@ -496,106 +496,35 @@
                     <div class="swiper et-slider" id="testimonialSliderOne"
                         data-slider-options='{"loop": true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":1,"centeredSlides":true},"768":{"slidesPerView":1},"992":{"slidesPerView":2},"1200":{"slidesPerView":2}}}'>
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonial_card style1">
-                                    <div class="testimonial_body">
+                            @foreach ($opinions as $opinion)
+                                <div class="swiper-slide">
+                                    <div class="testimonial_card style1">
+                                        <div class="testimonial_body">
 
-                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی
-                                            نامفهوم از صنعت چاپ، و با استفاده از
-                                            طراحان گرافیک است، چاپگرها و متون
-                                            بلکه روزنامه و مجله در ستون و
-                                            سطرآنچنان که
-                                        </p>
-                                    </div>
-                                    <div class="testimonial_footer">
-                                        <div class="fancy-box style1">
-                                            <div class="item"><img
-                                                    src="assets/img/testimonials/testimonialProfile1_1.jpg"
-                                                    alt="img" /></div>
-                                            <div class="item">
-                                                <h6>رز رضوی</h6>
-                                                <p>شرکت جیرفت</p>
-                                            </div>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی
+                                                نامفهوم از صنعت چاپ، و با استفاده از
+                                                طراحان گرافیک است، چاپگرها و متون
+                                                بلکه روزنامه و مجله در ستون و
+                                                سطرآنچنان که
+                                            </p>
                                         </div>
-                                        <div class="icon"><img src="assets/img/icon/quote.svg" alt="icon" /></div>
+                                        <div class="testimonial_footer">
+                                            <div class="fancy-box style1">
+                                                <div class="item"><img
+                                                        src="{{ asset('uploads/' . $opinion->photo_url) }}"
+                                                        alt="img" /></div>
+                                                <div class="item">
+                                                    <h6>{{ $opinion->name }}</h6>
+                                                    <p>{{ $opinion->job }}</p>
+                                                </div>
+                                            </div>
+                                            <div class="icon"><img src="assets/img/icon/quote.svg" alt="icon" /></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial_card style1">
-                                    <div class="testimonial_body">
+                            @endforeach
 
-                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی
-                                            نامفهوم از صنعت چاپ، و با استفاده از
-                                            طراحان گرافیک است، چاپگرها و متون
-                                            بلکه روزنامه و مجله در ستون و
-                                            سطرآنچنان که
-                                        </p>
-                                    </div>
-                                    <div class="testimonial_footer">
-                                        <div class="fancy-box style1">
-                                            <div class="item"><img
-                                                    src="assets/img/testimonials/testimonialProfile1_2.jpg"
-                                                    alt="img" /></div>
-                                            <div class="item">
-                                                <h6>کوهیار مهدوی</h6>
-                                                <p>شرکت به ساز</p>
-                                            </div>
-                                        </div>
-                                        <div class="icon"><img src="assets/img/icon/quote.svg" alt="icon" /></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial_card style1">
-                                    <div class="testimonial_body">
 
-                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی
-                                            نامفهوم از صنعت چاپ، و با استفاده از
-                                            طراحان گرافیک است، چاپگرها و متون
-                                            بلکه روزنامه و مجله در ستون و
-                                            سطرآنچنان که
-                                        </p>
-                                    </div>
-                                    <div class="testimonial_footer">
-                                        <div class="fancy-box style1">
-                                            <div class="item"><img
-                                                    src="assets/img/testimonials/testimonialProfile1_1.jpg"
-                                                    alt="img" /></div>
-                                            <div class="item">
-                                                <h6>رز رضوی</h6>
-                                                <p>شرکت جیرفت</p>
-                                            </div>
-                                        </div>
-                                        <div class="icon"><img src="assets/img/icon/quote.svg" alt="icon" /></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="testimonial_card style1">
-                                    <div class="testimonial_body">
-
-                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی
-                                            نامفهوم از صنعت چاپ، و با استفاده از
-                                            طراحان گرافیک است، چاپگرها و متون
-                                            بلکه روزنامه و مجله در ستون و
-                                            سطرآنچنان که
-                                        </p>
-                                    </div>
-                                    <div class="testimonial_footer">
-                                        <div class="fancy-box style1">
-                                            <div class="item"><img
-                                                    src="assets/img/testimonials/testimonialProfile1_2.jpg"
-                                                    alt="img" /></div>
-                                            <div class="item">
-                                                <h6>کوهیار مهدوی</h6>
-                                                <p>شرکت به ساز</p>
-                                            </div>
-                                        </div>
-                                        <div class="icon"><img src="assets/img/icon/quote.svg" alt="icon" /></div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
