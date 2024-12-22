@@ -9,7 +9,8 @@
                             <div class="widget footer-widget wow fadeInUp" data-wow-delay=".6s">
                                 <div class="et-widget-about">
                                     <div class="about-logo">
-                                        <a href="#"><img src="{{ asset('assets/img/logo-basic.png') }}" alt="هزوان ابنیه" /></a>
+                                        <a href="#"><img src="{{ asset('assets/img/logo-basic.png') }}"
+                                                alt="هزوان ابنیه" /></a>
                                     </div>
                                     <p class="about-text">
                                         هزوان ابنیه یک شرکت در زمینه ساخت و ساز برج ها
@@ -30,10 +31,12 @@
                                                 ما</a>
                                         </li>
                                         <li>
-                                            <a href="{{ route('home.service.index') }}"><i class="fa-light fa-hyphen"></i>خدمات</a>
+                                            <a href="{{ route('home.service.index') }}"><i
+                                                    class="fa-light fa-hyphen"></i>خدمات</a>
                                         </li>
                                         <li>
-                                            <a href="{{ route('home.project') }}"><i class="fa-light fa-hyphen"></i>پروژه
+                                            <a href="{{ route('home.project') }}"><i
+                                                    class="fa-light fa-hyphen"></i>پروژه
                                                 ها</a>
                                         </li>
                                         {{-- <li>
@@ -41,7 +44,8 @@
                                                 و اخبار</a>
                                         </li> --}}
                                         <li>
-                                            <a href="{{ route('home.contactUs.index') }}"><i class="fa-light fa-hyphen"></i>تماس
+                                            <a href="{{ route('home.contactUs.index') }}"><i
+                                                    class="fa-light fa-hyphen"></i>تماس
                                                 با ما</a>
                                         </li>
                                     </ul>
@@ -112,8 +116,10 @@
                                             <div class="single-contact_widget-title">
                                                 <h5>آدرس دفتر</h5>
                                             </div>
-                                            <a href="https://maps.app.goo.gl/TueKT2yUtNfv8Xin6">ایران،
-                                                تهران، برج میلاد</a>
+                                            <a href="https://maps.app.goo.gl/TueKT2yUtNfv8Xin6">
+                                                تهران، خیابان ولیعصر، نرسیده به توانیر، پلاک ۲۴۸۶
+                                                مجتمع اداری تجاری طلوع، طبقه سوم، واحد ۳۰۶
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
