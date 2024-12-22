@@ -35,8 +35,7 @@ Route::prefix('pages')->name('home.')->group(function () {
     Route::get('project', [HomeController::class, 'project'])->name('project');
 });
 
-
-Route::prefix('dashboard')->name('admin.')->group(function () {
+Route::group(['prefix' => 'dashboard', 'middleware' => 'auth', 'as' => 'admin.'], function () {
     Route::get('/', [DashboardController::class, 'index'])->name('home');
     Route::resource('category-project', CategoryProjectController::class);
     Route::resource('project', ProjectController::class);

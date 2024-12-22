@@ -180,7 +180,7 @@
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
-                                            <span class="fw-semibold d-block">جان دو</span>
+                                            <span class="fw-semibold d-block">ادمین</span>
                                             <small class="text-muted">مدیر</small>
                                         </div>
                                     </div>
@@ -191,9 +191,14 @@
                                 <div class="dropdown-divider"></div>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="auth-login-basic.html">
+                                <a class="dropdown-item" href="{{ route('logout') }}" role="button" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     <i class="bx bx-power-off me-2"></i>
-                                    <span class="align-middle">خروج</span>
+                                    <span class="align-middle">
+                                         خروج
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </span>
                                 </a>
                             </li>
                         </ul>

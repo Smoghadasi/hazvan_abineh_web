@@ -463,7 +463,7 @@
     <section class="team-member-section space pt-0 fix mt-n560">
         <div class="container">
             <div class="section-title d-flex flex-column justify-content-center mb-40">
-                <h6 class="subtitle theme-color2 text-center mxw-181px mx-auto wow fadeInUp" data-wow-delay="0.3s">اعضای
+                <h6 class="subtitle theme-color1 text-center mxw-181px mx-auto wow fadeInUp" data-wow-delay="0.3s">اعضای
                     تیم</h6>
                 <h2 class="title text-white mxw-750px text-center mx-auto wow fadeInUp" data-wow-delay="0.6s">واسه رویاهات
                     پل بساز</h2>
