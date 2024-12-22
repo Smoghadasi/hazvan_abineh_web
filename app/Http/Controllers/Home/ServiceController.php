@@ -10,7 +10,9 @@ class ServiceController extends Controller
 {
     public function index()
     {
-        return view('pages.home.services.index');
+        $services = Service::take(3)->orderByDesc('created_at')->get();
+
+        return view('pages.home.services.index', compact('services'));
     }
 
     public function show(Service $service)

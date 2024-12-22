@@ -81,35 +81,7 @@
             </div>
         </div>
     </section>
-    <!--  Service Section Start   -->
-    <div class="service-section space pb-0 fix">
-        <div class="service-wrapper style1">
-            <div class="container">
-                <div class="row gy-30 gx-30">
-                    @foreach ($services as $service)
-                        <div class="col-lg-4 col-md-6">
-                            <div class="service-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="service-card-icon">
-                                    <img src="/assets/img/icon/serviceIcon1_{{ rand(1, 6) }}.svg" alt="icon" />
-                                </div>
-                                <div class="service-card-body">
-                                    <h3 class="title"><a
-                                            href="{{ route('home.service.show', $service) }}">{{ $service->title ?? '-' }}</a>
-                                    </h3>
-                                    <p>
-                                        {{ $service->meta_description ?? '-' }}
-                                    </p>
-                                    <a href="{{ route('home.service.show', $service) }}" class="et-btn style3">
-                                        مطالعه بیشتر <i class="fa-regular fa-arrow-left"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
 
-                </div>
-            </div>
-        </div>
-    </div>
     <!--  About Section Start   -->
     <section class="about-section space pb-0 fix">
         <div class="container-fluid">
@@ -184,7 +156,8 @@
                                 </div>
                             </div>
                             <div class="contact-wrapper wow fadeInUp" data-wow-delay="0.3s">
-                                <a href="#" class="et-btn">بیشتر بخوان<i class="fa-solid fa-arrow-left"></i></a>
+                                <a href="{{ route('home.about') }}" class="et-btn">بیشتر بخوان<i
+                                        class="fa-solid fa-arrow-left"></i></a>
                                 <div class="contact-us">
                                     <img src="assets/img/icon/aboutIcon1_3.svg" alt="icon" />
                                     <div class="contact-us-text">
@@ -213,81 +186,31 @@
                     </h2>
                 </div>
                 <div class="row gy-30 gx-30">
-                    <div class="col-lg-4">
-                        <div class="offer-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="offer-card-body">
-                                <div class="title">
-                                    <img src="assets/img/icon/offerIcon1_1.svg" alt="icon" />
-                                    <h3><a href="service-details.html">برنامه ریزی
-                                            ساخت</a>
-                                    </h3>
+                    @foreach ($services as $service)
+                        <div class="col-lg-4">
+                            <div class="offer-card style1 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="offer-card-body">
+                                    <div class="title">
+                                        <img src="assets/img/icon/offerIcon1_1.svg" alt="icon" />
+                                        <h3>
+                                            <a href="{{ route('home.service.show', $service) }}">{{ $service->title ?? '-' }}</a>
+                                        </h3>
+                                    </div>
+                                    <p>
+                                        {{ $service->meta_description ?? '-' }}
+                                    </p>
+                                    <a href="{{ route('home.service.show', $service) }}" class="link-btn style2">
+                                        مطالعه بیشتر <i class="fa-regular fa-arrow-left"></i></a>
                                 </div>
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                                    صنعت چاپ، و با استفاده از طراحان گرافیک است،
-                                    چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                    سطرآنچنان که
-                                </p>
-                                <a href="service-details.html" class="link-btn style2">
-                                    مطالعه بیشتر <i class="fa-regular fa-arrow-left"></i></a>
+                                <a href="{{ route('home.service.show', $service) }}">
+                                    <div class="offer-card-thumb">
+                                        <img src="{{ asset('uploads/' . $service->photo_url) }}" alt="thumb" />
+                                    </div>
+                                </a>
                             </div>
-                            <a href="service-details.html">
-                                <div class="offer-card-thumb">
-                                    <img src="assets/img/offer/offer1_1.png" alt="thumb" />
-                                </div>
-                            </a>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="offer-card style1 wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="offer-card-body">
-                                <div class="title">
-                                    <img src="assets/img/icon/offerIcon1_2.svg" alt="icon" />
-                                    <h3><a href="service-details.html">نو سازی
-                                            ساختمان</a>
-                                    </h3>
-                                </div>
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                                    صنعت چاپ، و با استفاده از طراحان گرافیک است،
-                                    چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                    سطرآنچنان که
-                                </p>
-                                <a href="service-details.html" class="link-btn style2">
-                                    مطالعه بیشتر <i class="fa-regular fa-arrow-left"></i></a>
-                            </div>
-                            <a href="service-details.html">
-                                <div class="offer-card-thumb">
-                                    <img src="assets/img/offer/offer1_2.png" alt="thumb" />
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="offer-card style1 wow fadeInUp" data-wow-delay="0.9s">
-                            <div class="offer-card-body">
-                                <div class="title">
-                                    <img src="assets/img/icon/offerIcon1_3.svg" alt="icon" />
-                                    <h3><a href="service-details.html">پیمانکار
-                                            عمومی</a>
-                                    </h3>
-                                </div>
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                                    صنعت چاپ، و با استفاده از طراحان گرافیک است،
-                                    چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                    سطرآنچنان که
-                                </p>
-                                <a href="service-details.html" class="link-btn style2">
-                                    مطالعه بیشتر <i class="fa-regular fa-arrow-left"></i></a>
-                            </div>
-                            <a href="service-details.html">
-                                <div class="offer-card-thumb">
-                                    <img src="assets/img/offer/offer1_3.png" alt="thumb" />
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>
@@ -518,7 +441,8 @@
                                                     <p>{{ $opinion->job }}</p>
                                                 </div>
                                             </div>
-                                            <div class="icon"><img src="assets/img/icon/quote.svg" alt="icon" /></div>
+                                            <div class="icon"><img src="assets/img/icon/quote.svg" alt="icon" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
