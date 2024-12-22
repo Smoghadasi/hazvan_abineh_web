@@ -43,7 +43,7 @@
     <div class="mouse-cursor cursor-inner"></div>
     <!-- Preloader START -->
     <div id="preloader" class="preloader">
-        <button class="preloader-btn style2 preloaderCls"><i class="fa-solid fa-xmark"></i> لغو لودر</button>
+        <button class="preloader-btn style2 preloaderCls"><i class="fa-solid fa-xmark"></i> لغو</button>
         <div id="loader" class="et-preloader">
             <div class="animation-preloader">
                 <div class="txt-loading">
