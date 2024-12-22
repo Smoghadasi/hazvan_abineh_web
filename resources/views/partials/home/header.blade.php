@@ -16,8 +16,7 @@
                         <nav class="main-menu d-none d-xl-inline-block">
                             <ul>
                                 <li class="menu-item-has-children">
-                                <li><a href="{{ route('home') }}">صفحه اصلی </a>
-                                </li>
+                                    <li><a href="{{ route('home') }}">صفحه اصلی </a></li>
                                 </li>
                                 <li><a href="{{ route('home.about') }}">درباره ما </a></li>
                                 <li><a href="{{ route('home.service.index') }}">خدمات</a></li>

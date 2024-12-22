@@ -26,22 +26,22 @@
                                 <div class="menu-all-pages-container">
                                     <ul class="menu">
                                         <li>
-                                            <a href="#"><i class="fa-light fa-hyphen"></i>درباره
+                                            <a href="{{ route('home.about') }}"><i class="fa-light fa-hyphen"></i>درباره
                                                 ما</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa-light fa-hyphen"></i>خدمات</a>
+                                            <a href="{{ route('home.service.index') }}"><i class="fa-light fa-hyphen"></i>خدمات</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa-light fa-hyphen"></i>پروژه
+                                            <a href="{{ route('home.project') }}"><i class="fa-light fa-hyphen"></i>پروژه
                                                 ها</a>
                                         </li>
-                                        <li>
+                                        {{-- <li>
                                             <a href="blog.html"><i class="fa-light fa-hyphen"></i>بلاگ
                                                 و اخبار</a>
-                                        </li>
+                                        </li> --}}
                                         <li>
-                                            <a href="#"><i class="fa-light fa-hyphen"></i>تماس
+                                            <a href="{{ route('home.contactUs.index') }}"><i class="fa-light fa-hyphen"></i>تماس
                                                 با ما</a>
                                         </li>
                                     </ul>
