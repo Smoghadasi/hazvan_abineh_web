@@ -14,6 +14,7 @@
             <div class="card-body">
                 <form action="{{ route('admin.service.update', $service) }}" method="POST" enctype="multipart/form-data">
                     @csrf
+                    @method('put')
                     <div class="row">
                         <a target="_blank" href="{{ asset('uploads/' . $service->photo_url) }}">
                             <img style="width: 250px" src="{{ asset('uploads/' . $service->photo_url) }}" alt="">

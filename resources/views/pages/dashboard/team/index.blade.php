@@ -35,8 +35,15 @@
                                 {{ verta($team->created_at)->format('%B') }} /
                                 {{ verta($team->created_at)->format('%Y') }}
                             </td>
-                            <td>
-                                #
+                            <td class="d-flex">
+                                <a class="btn btn-sm btn-success"
+                                    href="{{ route('admin.team.edit', $team->id) }}">ویرایش
+                                </a>
+                                <form method="post" action="{{ route('admin.team.destroy', $team) }}">
+                                    @csrf
+                                    @method('delete')
+                                    <button class="btn btn-danger btn-sm" type="submit">حذف</button>
+                                </form>
                             </td>
                         </tr>
                     @empty
