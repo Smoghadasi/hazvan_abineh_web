@@ -37,8 +37,15 @@
                                 {{ verta($opinion->created_at)->format('%B') }} /
                                 {{ verta($opinion->created_at)->format('%Y') }}
                             </td>
-                            <td>
-                                #
+                            <td class="d-flex">
+                                <a class="btn btn-sm btn-success"
+                                    href="{{ route('admin.opinion.edit', $opinion->id) }}">ویرایش
+                                </a>
+                                <form method="post" action="{{ route('admin.opinion.destroy', $opinion) }}">
+                                    @csrf
+                                    @method('delete')
+                                    <button class="btn btn-danger btn-sm" type="submit">حذف</button>
+                                </form>
                             </td>
                         </tr>
                     @empty

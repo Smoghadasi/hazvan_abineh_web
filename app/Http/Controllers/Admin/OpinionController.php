@@ -55,24 +55,37 @@ class OpinionController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Opinion $opinion)
     {
-        //
+        return view('pages.dashboard.opinion.edit', compact('opinion'));
+
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Opinion $opinion)
     {
-        //
+        if ($file = $request->file('photo_url')) {
+            $name = time() . preg_replace('/\s+/', '', $file->getClientOriginalName());
+            $file->move('uploads', $name);
+            $opinion->photo_url = $name;
+        }
+        $opinion->name = $request->name;
+        $opinion->description = $request->description;
+        $opinion->job = $request->job;
+        $opinion->save();
+        return redirect()->route('admin.opinion.index')->with('success', 'با موفقیت ثبت شد');
+
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Opinion $opinion)
     {
-        //
+        $opinion->delete();
+        return back()->with('danger', 'با موفقیت حذف شد');
+
     }
 }
