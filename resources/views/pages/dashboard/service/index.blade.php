@@ -35,8 +35,15 @@
                                 {{ verta($service->created_at)->format('%B') }} /
                                 {{ verta($service->created_at)->format('%Y') }}
                             </td>
-                            <td>
-                                #
+                            <td class="d-flex">
+                                <a class="btn btn-sm btn-success"
+                                   href="{{ route('admin.service.edit', $service->id) }}">ویرایش
+                                </a>
+                                <form method="post" action="{{ route('admin.service.destroy', $service) }}">
+                                    @csrf
+                                    @method('delete')
+                                    <button class="btn btn-danger btn-sm" type="submit">حذف</button>
+                                </form>
                             </td>
                         </tr>
                     @empty

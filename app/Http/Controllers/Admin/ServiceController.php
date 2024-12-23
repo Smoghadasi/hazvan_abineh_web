@@ -54,24 +54,35 @@ class ServiceController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Service $service)
     {
-        //
+        return view('pages.dashboard.service.edit', compact('service'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Service $service)
     {
-        //
+        if ($file = $request->file('photo_url')) {
+            $name = time() . preg_replace('/\s+/', '', $file->getClientOriginalName());
+            $file->move('uploads', $name);
+            $service->photo_url = $name;
+        }
+        $service->title = $request->title;
+        $service->meta_description = $request->meta_description;
+        $service->description = $request->description;
+        $service->save();
+        return redirect()->route('admin.service.index')->with('success', 'با موفقیت ثبت شد');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Service $service)
     {
-        //
+        $service->delete();
+        return redirect()->route('admin.service.index')->with('danger', 'با موفقیت حذف شد');
+
     }
 }

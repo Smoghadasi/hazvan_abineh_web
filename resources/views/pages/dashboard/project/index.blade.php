@@ -33,8 +33,15 @@
                                 {{ verta($project->date)->format('%B') }} /
                                 {{ verta($project->date)->format('%Y') }}
                             </td>
-                            <td>
-                                #
+                            <td class="d-flex">
+                                <a class="btn btn-sm btn-success"
+                                    href="{{ route('admin.project.edit', $project->id) }}">ویرایش
+                                </a>
+                                <form method="post" action="{{ route('admin.project.destroy', $project) }}">
+                                    @csrf
+                                    @method('delete')
+                                    <button class="btn btn-danger btn-sm" type="submit">حذف</button>
+                                </form>
                             </td>
                         </tr>
                     @empty
