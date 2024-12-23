@@ -78,6 +78,11 @@
                     <li><a href="{{ route('home.service.index') }}">خدمات</a></li>
                     <li><a href="{{ route('home.project') }}"> پروژه ها </a></li>
                     <li><a href="{{ route('home.contactUs.index') }}">تماس با ما</a></li>
+                    @guest()
+                        <li><a href="{{ route('login') }}">ورود به سیستم</a></li>
+                    @else
+                        <li><a href="{{ route('admin.home') }}">ورود به پنل ادمین</a></li>
+                    @endguest
                 </ul>
 
             </nav>

@@ -27,12 +27,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Login Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>مهندسین مشاور هزوان ابنیه</title>
 
-    <meta name="description" content="" />
+    <meta name="description" content="مهندسین مشاور هزوان ابنیه" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets-sneat/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
