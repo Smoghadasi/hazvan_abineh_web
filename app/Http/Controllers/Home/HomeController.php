@@ -25,13 +25,10 @@ class HomeController extends Controller
         ]));
     }
 
-    public function about()
-    {
-        return view('pages.home.about.index');
-    }
-
     public function project()
     {
-        return view('pages.home.project.index');
+        $projects = Project::with('categoryProject')->orderByDesc('created_at')->get();
+
+        return view('pages.home.project.index', compact('projects'));
     }
 }
