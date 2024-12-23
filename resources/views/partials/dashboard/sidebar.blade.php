@@ -1,6 +1,8 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-    <span class="app-brand-logo demo mt-2" style="justify-items: center">
-        <img src="{{ asset('assets/img/logo-basic.png') }}" width="70" height="70" />
+    <span class="app-brand-logo demo mt-2" style="align-self: center">
+        <a href="/">
+            <img src="{{ asset('assets/img/logo-basic.png') }}" width="70" height="70" />
+        </a>
     </span>
 
     <div class="menu-inner-shadow"></div>
