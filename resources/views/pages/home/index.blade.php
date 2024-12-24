@@ -356,8 +356,8 @@
                                 <img class="thumb1" src="{{ asset('uploads/' . $project->photo_url) }}" alt="thumb" />
                                 <div class="thumb-content">
                                     <p>{{ $project->categoryProject->title }}</p>
-                                    <h3><a href="#">{{ $project->title ?? '-' }} </a></h3>
-                                    <a href="#" class="link-btn">
+                                    <h3><a href="{{ route('home.project.show', $project) }}">{{ $project->title ?? '-' }} </a></h3>
+                                    <a href="{{ route('home.project.show', $project) }}" class="link-btn">
                                         مطالعه بیشتر
                                         <i class="fa-regular fa-arrow-left"></i>
                                     </a>

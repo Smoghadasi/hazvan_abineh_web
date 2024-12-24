@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Home\AboutController;
 use App\Http\Controllers\Home\ContactUsController as HomeContactUsController;
 use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\Home\ProjectController as HomeProjectController;
 use App\Http\Controllers\Home\ServiceController as HomeServiceController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -33,7 +34,8 @@ Route::prefix('pages')->name('home.')->group(function () {
     Route::post('contact-us', [HomeContactUsController::class, 'store'])->name('contactUs.store');
     Route::get('services', [HomeServiceController::class, 'index'])->name('service.index');
     Route::get('services/{service}', [HomeServiceController::class, 'show'])->name('service.show');
-    Route::get('project', [HomeController::class, 'project'])->name('project');
+    Route::get('project', [HomeProjectController::class, 'index'])->name('project');
+    Route::get('project/{project}', [HomeProjectController::class, 'show'])->name('project.show');
 });
 
 Route::group(['prefix' => 'dashboard', 'middleware' => 'auth', 'as' => 'admin.'], function () {

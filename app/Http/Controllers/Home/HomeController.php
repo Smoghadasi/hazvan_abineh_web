@@ -24,11 +24,4 @@ class HomeController extends Controller
             'opinions'
         ]));
     }
-
-    public function project()
-    {
-        $projects = Project::with('categoryProject')->orderByDesc('created_at')->get();
-
-        return view('pages.home.project.index', compact('projects'));
-    }
 }
