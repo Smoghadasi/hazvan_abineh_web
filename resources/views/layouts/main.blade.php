@@ -69,7 +69,7 @@
             </div>
             <nav class="et-mobile-menu">
                 <ul>
-                    <li><select name="language" id="lang" style="border: none; width: 60px; font-family:arial;">
+                    <li><select name="language" id="lang" style="border: none; font-family:arial;">
                             <option value="english">En</option>
                             <option value="farsi">Fa</option>
                         </select> </li>

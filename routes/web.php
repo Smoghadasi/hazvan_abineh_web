@@ -27,6 +27,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get(
+    '/language/{locale?}',
+    function ($locale = 'fa') {
+        app()->setLocale($locale);
+        session()->put('locale', $locale);
+        return redirect()->back();
+    }
+);
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::prefix('pages')->name('home.')->group(function () {
     Route::get('about', [AboutController::class, 'index'])->name('about');

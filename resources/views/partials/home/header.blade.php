@@ -41,8 +41,8 @@
                                     class="line"></span> <span class="line"></span>
                             </button>
                             <select name="language" id="lang"
-                                style="border: none; width: 60px; font-family:arial;">
-                                <option value="english">En</option>
+                                style="border: none; font-family:arial;">
+                                <option selected value="english">En</option>
                                 <option value="farsi">Fa</option>
                             </select>
                             <div class="info-text">

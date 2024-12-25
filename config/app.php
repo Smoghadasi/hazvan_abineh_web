@@ -69,7 +69,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Tehran',
 
     /*
     |--------------------------------------------------------------------------
@@ -95,7 +95,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'fa',
 
     /*
     |--------------------------------------------------------------------------
@@ -107,6 +107,11 @@ return [
     | localized telephone numbers, street address information and more.
     |
     */
+
+    'available_locales' => [
+        'انگلیسی' => 'en',
+        'فارسی' => 'fa',
+    ],
 
     'faker_locale' => 'en_US',
 
