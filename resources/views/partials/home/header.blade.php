@@ -45,10 +45,7 @@
                                 <option selected value="english">En</option>
                                 <option value="farsi">Fa</option>
                             </select>
-                            <div class="info-text">
-                                <p>مشاوره میخوای؟</p>
-                                <h4><a href="tel:02188883995">۰۲۱-۸۸۸۸۳۹۹۵</a></h4>
-                            </div>
+
                         </div>
                     </div>
                 </div>

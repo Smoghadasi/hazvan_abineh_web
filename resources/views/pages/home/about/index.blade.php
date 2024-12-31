@@ -67,15 +67,15 @@
                                 <div class="col-lg-12">
                                     <div class="checklist-wrapper wow fadeInUp" data-wow-delay="0.5s">
                                         <ul class="checklist">
-                                            <li><img src="/assets/img/icon/checkDouble.svg" alt="icon" /></li>
+                                            <li><img src="/assets/img/icon/checkDouble.png" alt="icon" /></li>
                                             <li>100% رضایت مشتری</li>
                                         </ul>
                                         <ul class="checklist">
-                                            <li><img src="/assets/img/icon/checkDouble.svg" alt="icon" /></li>
+                                            <li><img src="/assets/img/icon/checkDouble.png" alt="icon" /></li>
                                             <li>تیم مهندسی خبره</li>
                                         </ul>
                                         <ul class="checklist">
-                                            <li><img src="/assets/img/icon/checkDouble.svg" alt="icon" /></li>
+                                            <li><img src="/assets/img/icon/checkDouble.png" alt="icon" /></li>
                                             <li>قیمت مقرون به صرفه و منعطف</li>
                                         </ul>
                                     </div>
@@ -94,106 +94,6 @@
         </div>
     </section>
 
-    <!--  Work Process Section Start   -->
-    <section class="work-process-section space pb-0 fix">
-        <div class="container-fluid">
-            <div class="work-process-container-wrapper style1 space bg-theme-color2 border-radius">
-                <div class="container">
-                    <div class="counters-area style1">
-                        <div class="row gy-4">
-                            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
-                                <div class="counter">
-                                    <div class="counter-thumb">
-                                        <img src="/assets/img/icon/counterIcon1_1.svg" alt="icon" />
-                                        <h2><span class="counter-number">10 </span>k+</h2>
-                                    </div>
-                                    <p>پروژه کامل در هر سال</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
-                                <div class="counter">
-                                    <div class="counter-thumb">
-                                        <img src="/assets/img/icon/counterIcon1_2.svg" alt="icon" />
-                                        <h2><span class="counter-number"> 14 </span>k+</h2>
-                                    </div>
-                                    <p>عضو فعال</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
-                                <div class="counter">
-                                    <div class="counter-thumb">
-                                        <img src="/assets/img/icon/counterIcon1_3.svg" alt="icon" />
-                                        <h2><span class="counter-number">97 </span>%</h2>
-                                    </div>
-                                    <p>نرخ تایید ساختمان</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
-                                <div class="counter">
-                                    <div class="counter-thumb">
-                                        <img src="/assets/img/icon/counterIcon1_4.svg" alt="icon" />
-                                        <h2><span class="counter-number">800 </span>+</h2>
-                                    </div>
-                                    <p>پروژه فعال ساخت و ساز</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr />
-                    <div class="work-process">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="section-title">
-                                    <h6 class="subtitle wow fadeInUp" data-wow-delay="0.3s">فرایند کار ما</h6>
-                                    <h2 class="title wow fadeInUp" data-wow-delay="0.6s">مراحل شکل گیری یک ساختمان</h2>
-                                </div>
-                                <div class="work-process-content">
-                                    <div class="fancy-box-style-2 wow fadeInUp" data-wow-delay="0.3s">
-                                        <img src="/assets/img/icon/wcuIcon1_1.svg" alt="icon" />
-                                        <div class="fancy-box-content">
-                                            <h6>مرحله 1</h6>
-                                            <h4>ساخت یک کانسپت طراحی</h4>
-                                            <p>
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
-                                                طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="fancy-box-style-2 wow fadeInUp" data-wow-delay="0.6s">
-                                        <img src="/assets/img/icon/wcuIcon1_2.svg" alt="icon" />
-                                        <div class="fancy-box-content">
-                                            <h6>مرحله 2</h6>
-                                            <h4>تست طراحی و کنترل کیفیت</h4>
-                                            <p>
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
-                                                طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="fancy-box-style-2 wow fadeInUp" data-wow-delay="0.9s">
-                                        <img src="/assets/img/icon/wcuIcon1_3.svg" alt="icon" />
-                                        <div class="fancy-box-content">
-                                            <h6>مرحله 3</h6>
-                                            <h4>مونتاژ نهایی و تحویل پروژه</h4>
-                                            <p>
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
-                                                طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="work-process-thumb wow fadeInUp" data-wow-delay="0.3s">
-                                    <img src="/assets/img/wcu/wcuThumb1_1.jpg" alt="thumb" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
