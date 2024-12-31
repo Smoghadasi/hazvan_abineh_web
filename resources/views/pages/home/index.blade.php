@@ -120,13 +120,7 @@
                                 <div class="about-us-thumb">
                                     <img src="assets/img/about/aboutThumb1_1.jpg" alt="thumb" />
                                 </div>
-                                <div class="counter-wrapper">
-                                    <h2><span class="counter-number">20</span>+</h2>
-                                    <p>
-                                        سال <br />
-                                        سابقه
-                                    </p>
-                                </div>
+
                             </div>
                         </div>
                         <div class="col-lg-6">

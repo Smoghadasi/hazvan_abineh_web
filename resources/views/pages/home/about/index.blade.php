@@ -1,8 +1,8 @@
 @extends('layouts.main')
 @section('content')
     <!--==============================
-                             Breadcrumb Area
-                             ==============================-->
+                                 Breadcrumb Area
+                                 ==============================-->
     <div class="breadcrumb-wrapper">
         <div class="container-fluid">
             <div class="breadcumb border-radius" data-bg-src="/assets/img/hero/breadcumbBg.png">
@@ -43,10 +43,10 @@
                 <div class="row gy-30 gx-80">
                     <div class="col-xl-6">
                         <div class="about-thumb wow fadeInUp" data-wow-delay="0.3s">
-                            <img src="/assets/img/about/aboutThumb2_1.png" alt="thumb" />
+                            {{-- <img src="/assets/img/about/aboutThumb2_1.png" alt="thumb" /> --}}
                             <div class="shape">
-                                <img src="/assets/img/shape/aboutShape2_1.png" alt="shape" />
-                                <h6><span class="counter-number"> 20 </span> <span class="plus"> + </span> سال تجربه</h6>
+                                <img src="{{ asset('assets/img/sliders/4.jpeg') }}" alt="shape" />
+                                {{-- <h6><span class="counter-number"> 20 </span> <span class="plus"> + </span> سال تجربه</h6> --}}
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                             </div>
 
                             <div class="checklist-box row gy-5 gx-17">
-                                <div class="col-lg-7">
+                                <div class="col-lg-12">
                                     <div class="checklist-wrapper wow fadeInUp" data-wow-delay="0.5s">
                                         <ul class="checklist">
                                             <li><img src="/assets/img/icon/checkDouble.svg" alt="icon" /></li>
@@ -80,29 +80,12 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                                <div class="col-lg-5">
-                                    <div class="thumb wow fadeInUp" data-wow-delay="0.3s">
-                                        <img src="/assets/img/about/aboutThumb2_2.png" alt="thumb" />
-                                        <div class="video-box">
-                                            <a href="https:/www.youtube.com/watch?v=f2Gzr8sAGB8"
-                                                class="play-btn popup-video"><i
-                                                    class="fa-sharp-duotone fa-solid fa-play"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
 
                             <div class="contact-wrapper wow fadeInUp" data-wow-delay="0.3s">
-                                <a href="about.html" class="et-btn style4">بیشتر بخوان<i
+                                <a href="{{ route('home.about') }}" class="et-btn style4">بیشتر بخوان<i
                                         class="fa-solid fa-arrow-left"></i></a>
-                                <div class="fancy-box style1">
-                                    <img src="/assets/img/about/aboutProfile1_1.png" alt="img" />
-                                    <div class="item">
-                                        <h6>مهندس ارشد</h6>
-                                        <p>دانیال علوی</p>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>

@@ -57,26 +57,11 @@
                                 <h3 class="widget_title">خدمات ما</h3>
                                 <div class="menu-all-pages-container">
                                     <ul class="menu">
-                                        <li>
-                                            <a href="#"><i class="fa-light fa-hyphen"></i>مشاوره
-                                                ساختمان</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa-light fa-hyphen"></i>طراحی
-                                                معماری</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa-light fa-hyphen"></i>طراحی
-                                                داخلی</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa-light fa-hyphen"></i>نوسازی
-                                                ساختمان</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa-light fa-hyphen"></i>پروژه
-                                                مسکونی</a>
-                                        </li>
+                                        @foreach (App\helpers\helper::servicesFooterCenter() as $service)
+                                            <li>
+                                                <a href="{{ route('home.service.show', $service) }}"><i class="fa-light fa-hyphen"></i>{{ $service->title }}</a>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>
@@ -135,13 +120,13 @@
                                         محفوظ است.
                                     </p>
                                 </div>
-                                <div class="layout-link wow fadeInUp" data-wow-delay=".6s">
+                                {{-- <div class="layout-link wow fadeInUp" data-wow-delay=".6s">
                                     <div class="link-wrapper">
                                         <a href="#">شرایط و قوانین </a>
                                         <a href="#">حریم خصوصی</a>
                                         <a href="#">تماس با ما</a>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
