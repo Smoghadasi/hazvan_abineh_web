@@ -32,11 +32,12 @@
                                     <div class="swiper et-slider" id="heroSliderOne"
                                         data-slider-options='{"loop": true, "effect": "fade"}'>
                                         <div class="swiper-wrapper">
+
                                             <div class="swiper-slide">
                                                 <div class="hero-thumb style1">
                                                     <div class="bordered-mask">
                                                         <div class="masked-image">
-                                                            <img class="main-thumb" src="assets/img/hero/heroThumb1_1.png"
+                                                            <img class="main-thumb" src="{{ asset('assets/img/sliders/1.jpeg') }}"
                                                                 alt="thumb" />
                                                         </div>
                                                     </div>
@@ -49,7 +50,7 @@
                                                 <div class="hero-thumb style1">
                                                     <div class="bordered-mask">
                                                         <div class="masked-image">
-                                                            <img class="main-thumb" src="assets/img/hero/heroThumb1_2.png"
+                                                            <img class="main-thumb" src="{{ asset('assets/img/sliders/2.jpeg') }}"
                                                                 alt="thumb" />
                                                         </div>
                                                     </div>
@@ -62,7 +63,33 @@
                                                 <div class="hero-thumb style1">
                                                     <div class="bordered-mask">
                                                         <div class="masked-image">
-                                                            <img class="main-thumb" src="assets/img/hero/heroThumb1_3.png"
+                                                            <img class="main-thumb" src="{{ asset('assets/img/sliders/3.jpeg') }}"
+                                                                alt="thumb" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="shape">
+                                                        <img src="assets/img/shape/heroShape1_1.png" alt="shape" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="hero-thumb style1">
+                                                    <div class="bordered-mask">
+                                                        <div class="masked-image">
+                                                            <img class="main-thumb" src="{{ asset('assets/img/sliders/4.jpeg') }}"
+                                                                alt="thumb" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="shape">
+                                                        <img src="assets/img/shape/heroShape1_1.png" alt="shape" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="hero-thumb style1">
+                                                    <div class="bordered-mask">
+                                                        <div class="masked-image">
+                                                            <img class="main-thumb" src="{{ asset('assets/img/sliders/5.jpeg') }}"
                                                                 alt="thumb" />
                                                         </div>
                                                     </div>
