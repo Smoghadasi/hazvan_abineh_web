@@ -37,7 +37,7 @@
     </div>
 
     <!-- Faq Section    S T A R T -->
-    <section class="faq-section fix m-3">
+    {{-- <section class="faq-section fix m-3">
         <div class="container-fluid">
             <div class="faq-container-wrapper space style2 pt-0">
                 <div class="container">
@@ -120,5 +120,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 @endsection
