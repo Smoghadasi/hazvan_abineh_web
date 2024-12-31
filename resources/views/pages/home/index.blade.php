@@ -173,81 +173,8 @@
             </div>
         </div>
     </section>
-    <!--  Offer Section Start   -->
-    <div class="offer-section space pb-0 fix">
-        <div class="offer-wrapper style1">
-            <div class="container">
-                <div class="section-title d-flex flex-column justify-content-center mb-40">
-                    <h6 class="subtitle theme-color3 text-center mxw-181px mx-auto wow fadeInUp" data-wow-delay="0.3s">
-                        آنچه ما ارائه می دهیم
-                    </h6>
-                    <h2 class="title mxw-750px text-center mx-auto wow fadeInUp" data-wow-delay="0.6s">
-                        ساخت آینده ای درخشان با حفظ اصالت گذشته
-                    </h2>
-                </div>
-                <div class="row gy-30 gx-30">
-                    @foreach ($services as $service)
-                        <div class="col-lg-4">
-                            <div class="offer-card style1 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="offer-card-body">
-                                    <div class="title">
-                                        <img src="assets/img/icon/offerIcon1_1.svg" alt="icon" />
-                                        <h3>
-                                            <a href="{{ route('home.service.show', $service) }}">{{ $service->title ?? '-' }}</a>
-                                        </h3>
-                                    </div>
-                                    <p>
-                                        {{ $service->meta_description ?? '-' }}
-                                    </p>
-                                    <a href="{{ route('home.service.show', $service) }}" class="link-btn style2">
-                                        مطالعه بیشتر <i class="fa-regular fa-arrow-left"></i></a>
-                                </div>
-                                <a href="{{ route('home.service.show', $service) }}">
-                                    <div class="offer-card-thumb">
-                                        <img src="{{ asset('uploads/' . $service->photo_url) }}" alt="thumb" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    @endforeach
 
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="project-section space fix">
-        <div class="project-wrapper style1">
-            <div class="container">
-                <div class="section-title d-flex flex-column justify-content-center mb-40">
-                    <h6 class="subtitle theme-color3 text-center mxw-163px mx-auto wow fadeInUp" data-wow-delay="0.3s">
-                        پروژه های ما
-                    </h6>
-                    <h2 class="title mxw-750px text-center mx-auto wow fadeInUp" data-wow-delay="0.6s">
-                        اعتماد پایه و اساس کار ماست
-                    </h2>
-                </div>
-                <div class="row gy-30 gx-30">
-                    @foreach ($projects as $project)
-                        <div class="col-lg-4">
-                            <div class="project-thumb wow fadeInUp" data-wow-delay="0.3s">
-                                <img class="thumb1" src="{{ asset('uploads/' . $project->photo_url) }}" alt="thumb" />
-                                <div class="thumb-content">
-                                    <p>{{ $project->categoryProject->title }}</p>
-                                    <h3><a href="{{ route('home.project.show', $project) }}">{{ $project->title ?? '-' }} </a></h3>
-                                    <a href="{{ route('home.project.show', $project) }}" class="link-btn">
-                                        مطالعه بیشتر
-                                        <i class="fa-regular fa-arrow-left"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-
-                </div>
-            </div>
-        </div>
-    </div>
     <!--  Brand Slider Section S T A R T   -->
     <div class="brand-slider-section">
         <div class="container-fluid">
