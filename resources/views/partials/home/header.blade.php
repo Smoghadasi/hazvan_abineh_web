@@ -8,7 +8,7 @@
                     <div class="col-auto">
                         <div class="header-logo">
                             <a href="/">
-                                <img width="50" src="{{ asset('assets/img/logo-basic_3.png') }}" alt="هزوان ابنیه" />
+                                <img width="50" src="{{ asset('assets/img/logo-basic_4.png') }}" alt="هزوان ابنیه" />
                             </a>
                         </div>
                     </div>
