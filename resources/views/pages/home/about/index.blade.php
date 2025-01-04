@@ -55,7 +55,7 @@
                         <div class="about-content">
                             <div class="section-title style4">
                                 <h6 class="subtitle style2 wow fadeInUp" data-wow-delay="0.3s">درباره شرکت</h6>
-                                <h2 class="title wow fadeInUp" data-wow-delay="0.6s">ما بهترین کیفیت ساخت و ساز را ارائه می
+                                <h2 style="padding-top: 5rem" class="title wow fadeInUp" data-wow-delay="0.6s">ما بهترین کیفیت ساخت و ساز را ارائه می
                                     کنیم</h2>
                                 <p>
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک

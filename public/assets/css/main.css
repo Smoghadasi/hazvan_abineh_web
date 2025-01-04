@@ -4560,6 +4560,10 @@ textarea.is-invalid {
     padding-top: 16.5px;
     padding-bottom: 16.5px;
   }
+
+  .header-layout1 .menu-area .header-logo a img {
+    width: 170px;
+  }
 }
 .header-layout1 .main-menu > ul > li > a:before {
   content: "";
