@@ -1,5 +1,5 @@
 /*------------ shabnam font ------------*/
-/* @font-face {
+@font-face {
 	font-family: 'shabnam';
 	src: url( '../fonts/shabnam/shabnam-light.eot' );
 	src: url( '../fonts/shabnam/shabnam-light.eot?#iefix' ) format( 'embedded-opentype' ),
@@ -38,7 +38,7 @@
 		url( '../fonts/shabnam/shabnam-bold.ttf' ) format( 'truetype' );
 	font-weight: 700;
 	font-style: normal;
-} */
+}
 
 /*------------ parastoo font ------------*/
 /* @font-face {
@@ -129,7 +129,7 @@
 } */
 
 /*------------ vazir font ------------*/
-@font-face {
+/* @font-face {
 	font-family: 'vazir';
 	src: url( '../fonts/vazir/vazir-light.eot' );
 	src: url( '../fonts/vazir/vazir-light.eot?#iefix' ) format( 'embedded-opentype' ),
@@ -168,7 +168,7 @@
 		url( '../fonts/vazir/vazir-bold.ttf' ) format( 'truetype' );
 	font-weight: 700;
 	font-style: normal;
-}
+} */
 
 /*------------ yekan font ------------*/
 /* @font-face {
