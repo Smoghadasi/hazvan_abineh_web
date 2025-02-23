@@ -6,27 +6,7 @@
     <div class="breadcrumb-wrapper">
         <div class="container-fluid">
             <div class="breadcumb border-radius" style="height: 25rem" data-bg-src="/assets/img/hero/SCROLL.jpg">
-                <div class="row d-flex align-items-center">
-                    <div class="col-xl-12 d-flex justify-content-center">
-                        <div class="page-heading">
-                            <h1 class="wow fadeInUp" data-wow-delay=".3s">درباره ما</h1>
-                            <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
-                                <li>
-                                    <a href="index.html">
-                                        صفحه اصلی
-                                    </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-chevron-left"></i>
-                                </li>
-                                <li>
-                                    درباره ما
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
 
-                </div>
             </div>
         </div>
     </div>
