@@ -2,7 +2,7 @@
 <footer class="footer-area pt-5">
     <div class="widget-area style1 pb-60">
         <div class="container-fluid">
-            <div class="footer-layout style1" data-bg-src="/assets/img/bg/footerBg.png">
+            <div class="footer-layout style1" style="background-color: #A79978">
                 <div class="container">
                     <div class="row d-flex justify-content-between">
                         <div class="col-xl-4 col-md-6 col-12">

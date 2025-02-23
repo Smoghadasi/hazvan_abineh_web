@@ -5,9 +5,9 @@
                                  ==============================-->
     <div class="breadcrumb-wrapper">
         <div class="container-fluid">
-            <div class="breadcumb border-radius" data-bg-src="/assets/img/hero/breadcumbBg.png">
+            <div class="breadcumb border-radius" style="height: 25rem" data-bg-src="/assets/img/hero/SCROLL.jpg">
                 <div class="row d-flex align-items-center">
-                    <div class="col-xl-6 d-flex justify-content-center">
+                    <div class="col-xl-12 d-flex justify-content-center">
                         <div class="page-heading">
                             <h1 class="wow fadeInUp" data-wow-delay=".3s">درباره ما</h1>
                             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
@@ -25,12 +25,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-6 d-flex justify-content-center">
-                        <div class="breadcumb-thumb">
-                            <img class="thumb" src="/assets/img/hero/breadcumbThumb.png" alt="thumb" />
-                            <div class="shape"><img src="/assets/img/shape/breadcumbShape.png" alt="shape" /></div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>

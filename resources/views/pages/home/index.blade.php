@@ -10,20 +10,8 @@
                             <div class="col-lg-7 order-2 order-lg-1">
                                 <div class="hero-content style1">
                                     <div class="hero-title-wrapper">
-                                        <div class="subtitle" data-bg-src="assets/img/bg/btnBg.png">
-                                            <h6>ویژگی ها</h6>
-                                        </div>
-                                        <h1 class="title">راه حلی برای حل چالش صنعت
-                                            های <span>مدرن</span>
-                                        </h1>
-                                        <p class="text mxw-586">
-                                            لورم ایپسوم متن ساختگی با تولید
-                                            سادگی نامفهوم از صنعت چاپ، و با
-                                            استفاده از طراحان گرافیک است،
-                                            چاپگرها و متون بلکه روزنامه و مجله
-                                            در ستون و سطرآنچنان که
-                                        </p>
-                                        <a href="{{ route('home.about') }}" class="et-btn style2">درباره ما</a>
+                                        <img src="{{ asset('assets/img/logo-basic_4.png') }}" alt="" class="img-fluid">
+                                        {{-- <a href="{{ route('home.about') }}" class="et-btn style2">درباره ما</a> --}}
                                     </div>
                                 </div>
                             </div>
@@ -37,7 +25,8 @@
                                                 <div class="hero-thumb style1">
                                                     <div class="bordered-mask">
                                                         <div class="masked-image">
-                                                            <img class="main-thumb" src="{{ asset('assets/img/sliders/1.jpeg') }}"
+                                                            <img class="main-thumb"
+                                                                src="{{ asset('assets/img/sliders/1.jpeg') }}"
                                                                 alt="thumb" />
                                                         </div>
                                                     </div>
@@ -50,7 +39,8 @@
                                                 <div class="hero-thumb style1">
                                                     <div class="bordered-mask">
                                                         <div class="masked-image">
-                                                            <img class="main-thumb" src="{{ asset('assets/img/sliders/2.jpeg') }}"
+                                                            <img class="main-thumb"
+                                                                src="{{ asset('assets/img/sliders/2.jpeg') }}"
                                                                 alt="thumb" />
                                                         </div>
                                                     </div>
@@ -63,7 +53,8 @@
                                                 <div class="hero-thumb style1">
                                                     <div class="bordered-mask">
                                                         <div class="masked-image">
-                                                            <img class="main-thumb" src="{{ asset('assets/img/sliders/3.jpeg') }}"
+                                                            <img class="main-thumb"
+                                                                src="{{ asset('assets/img/sliders/3.jpeg') }}"
                                                                 alt="thumb" />
                                                         </div>
                                                     </div>
@@ -76,7 +67,8 @@
                                                 <div class="hero-thumb style1">
                                                     <div class="bordered-mask">
                                                         <div class="masked-image">
-                                                            <img class="main-thumb" src="{{ asset('assets/img/sliders/4.jpeg') }}"
+                                                            <img class="main-thumb"
+                                                                src="{{ asset('assets/img/sliders/4.jpeg') }}"
                                                                 alt="thumb" />
                                                         </div>
                                                     </div>
@@ -89,7 +81,8 @@
                                                 <div class="hero-thumb style1">
                                                     <div class="bordered-mask">
                                                         <div class="masked-image">
-                                                            <img class="main-thumb" src="{{ asset('assets/img/sliders/5.jpeg') }}"
+                                                            <img class="main-thumb"
+                                                                src="{{ asset('assets/img/sliders/5.jpeg') }}"
                                                                 alt="thumb" />
                                                         </div>
                                                     </div>
@@ -132,11 +125,14 @@
                                     بهترین کیفیت ساخت و ساز را از ما بخواهید
                                 </h2>
                                 <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                                    صنعت چاپ، و با استفاده از طراحان گرافیک است،
-                                    چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                    سطرآنچنان که
-                                </p>
+                                    شرکت مهندسین مشاور هزوان ابنیه با تکیه بر دانش فنی و تجربه‌ی تخصصی همکاران خود، در
+                                    حوزه‌ی طراحی و اجرای پروژه‌های معماری و شهری فعالیت می‌کند. تیم متخصص ما با سابقه‌ای غنی
+                                    در طراحی و خلق فضاهای چندمنظوره و انسان‌محور، شامل کاربری‌های مختلفی همچون مسکونی،
+                                    تجاری، اداری، فرهنگی و همچنین فضاهای عمومی شهری، همواره به دنبال ارائه‌ی راه‌حل‌های
+                                    نوآورانه و پایدار است. ما با به‌کارگیری آخرین استانداردهای طراحی و فناوری‌های روز، در پی
+                                    تحقق اهداف کارفرمایان و بهره‌برداران هستیم و تعالی در کیفیت، عملکرد و زیبایی‌شناسی را
+                                    سرلوحه‌ی کار خود قرار داده‌ایم. همکاری مستمر با ذینفعان و درک عمیق نیازهای آن‌ها، اساس
+                                    رویکرد حرفه‌ای ماست. </p>
                             </div>
                             <div class="fancy-box-wrapper">
                                 <div class="row">
@@ -197,7 +193,7 @@
 
 
     <!--  Brand Slider Section S T A R T   -->
-    <div class="brand-slider-section">
+    {{-- <div class="brand-slider-section">
         <div class="container-fluid">
             <div class="brand-slider-wrapper style1  border-radius fix pb-640 bg-theme-color3">
                 <div class="slider-area">
@@ -207,9 +203,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--  Team Member Section S T A R T   -->
-    <section class="team-member-section space pt-0 fix mt-n560">
+    {{-- <section class="team-member-section space pt-0 fix mt-n560">
         <div class="container">
             <div class="section-title d-flex flex-column justify-content-center mb-40">
                 <h6 class="subtitle theme-color1 text-center mxw-181px mx-auto wow fadeInUp" data-wow-delay="0.3s">اعضای
@@ -236,9 +232,9 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Testimonial Section    S T A R T -->
-    <section class="testimonial-section space pt-0 fix">
+    <section class="testimonial-section space py-5">
         <div class="testimonial-wrapper style1">
             <div class="container">
                 <div class="slider-area testimonialSliderOne">
