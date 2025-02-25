@@ -79,8 +79,8 @@ Version: 1.0.0
   --white-color: #ffffff;
   --light-color: #BDBDBD;
   --border-color: #DDDDDD;
-  --title-font: "shabnam";
-  --body-font: "shabnam";
+  --title-font: "yekan";
+  --body-font: "yekan";
   --icon-font: "Font Awesome 6 Pro";
   --section-space: 120px;
   --section-space-mobile: 80px;
@@ -3886,10 +3886,10 @@ textarea.is-invalid {
   -o-transition: 0.4s ease-in-out;
 }
 .widget.widget_nav_menu.footer-widget .menu-all-pages-container .menu li a:hover {
-  color: var(--theme-color2);
+  color: var(--black-color);
 }
 .widget.widget_nav_menu.footer-widget .menu-all-pages-container .menu li a:hover i {
-  color: var(--theme-color2);
+  color: var(--black-color);
 }
 .widget.widget_nav_menu.footer-widget .single-contact-widget {
   margin-top: 25px;
@@ -3924,7 +3924,7 @@ textarea.is-invalid {
   margin-bottom: 0;
 }
 .widget.widget_nav_menu.footer-widget .single-contact-widget .single-contact_item a:hover {
-  color: var(--theme-color2);
+  color: var(--black-color);
 }
 .widget.widget_nav_menu.footer-widget .single-contact-widget .single-contact_widget-title h5 {
   color: var(--white-color);

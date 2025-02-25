@@ -1,5 +1,5 @@
 /*------------ shabnam font ------------*/
-@font-face {
+/* @font-face {
 	font-family: 'shabnam';
 	src: url( '../fonts/shabnam/shabnam-light.eot' );
 	src: url( '../fonts/shabnam/shabnam-light.eot?#iefix' ) format( 'embedded-opentype' ),
@@ -38,7 +38,7 @@
 		url( '../fonts/shabnam/shabnam-bold.ttf' ) format( 'truetype' );
 	font-weight: 700;
 	font-style: normal;
-}
+} */
 
 /*------------ parastoo font ------------*/
 /* @font-face {
@@ -171,7 +171,7 @@
 } */
 
 /*------------ yekan font ------------*/
-/* @font-face {
+@font-face {
 	font-family: 'yekan';
 	src: url( '../fonts/yekan/yekan.eot' );
 	src: url( '../fonts/yekan/yekan.eot?#iefix' ) format( 'embedded-opentype' ),
@@ -180,7 +180,7 @@
 		url( '../fonts/yekan/yekan.ttf' ) format( 'truetype' );
 	font-weight: 700;
 	font-style: normal;
-} */
+}
 
 /*------------ dubai font ------------*/
 /* @font-face {

@@ -5,18 +5,19 @@
             <div class="footer-layout style1" style="background-color: #A79978">
                 <div class="container">
                     <div class="row d-flex justify-content-between">
-                        <div class="col-xl-4 col-md-6 col-12">
+                        <div class="col-xl-2 col-md-6 col-12">
                             <div class="widget footer-widget wow fadeInUp" data-wow-delay=".6s">
                                 <div class="et-widget-about">
                                     <div class="about-logo">
-                                        <a href="#"><img src="{{ asset('assets/img/logo-basic.png') }}"
-                                                alt="هزوان ابنیه" /></a>
+                                        <a class="logo-footer" href="#">
+                                            <img class="img-fluid" src="{{ asset('assets/img/logo-basic.png') }}" alt="هزوان ابنیه" />
+                                        </a>
                                     </div>
-                                    <p class="about-text">
+                                    {{-- <p class="about-text">
                                         هزوان ابنیه یک شرکت در زمینه ساخت و ساز برج ها
                                         و پروژه های ساختمانی که دارای خلاقیت و ایده
                                         های مهمی است.
-                                    </p>
+                                    </p> --}}
 
                                 </div>
                             </div>

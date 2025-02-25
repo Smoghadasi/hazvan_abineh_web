@@ -28,8 +28,8 @@
                         <div class="about-content">
                             <div class="section-title style4">
                                 <h6 class="subtitle style2 wow fadeInUp" data-wow-delay="0.3s">درباره شرکت</h6>
-                                <h2 style="padding-top: 5rem" class="title wow fadeInUp" data-wow-delay="0.6s">درباره شرکت</h2>
-                                    <p>
+                                {{-- <h2 style="padding-top: 5rem" class="title wow fadeInUp" data-wow-delay="0.6s">درباره شرکت</h2> --}}
+                                    <p style="text-align: justify">
                                         شرکت مهندسین مشاور هزوان ابنیه با تکیه بر دانش فنی و تجربه‌ی تخصصی همکاران خود، در
                                         حوزه‌ی طراحی و اجرای پروژه‌های معماری و شهری فعالیت می‌کند. تیم متخصص ما با سابقه‌ای غنی
                                         در طراحی و خلق فضاهای چندمنظوره و انسان‌محور، شامل کاربری‌های مختلفی همچون مسکونی،
@@ -40,7 +40,7 @@
                                         رویکرد حرفه‌ای ماست. </p>
                                 </div>
 
-                            <div class="checklist-box row gy-5 gx-17">
+                            {{-- <div class="checklist-box row gy-5 gx-17">
                                 <div class="col-lg-12">
                                     <div class="checklist-wrapper wow fadeInUp" data-wow-delay="0.5s">
                                         <ul class="checklist">
@@ -57,7 +57,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
 
                         </div>
