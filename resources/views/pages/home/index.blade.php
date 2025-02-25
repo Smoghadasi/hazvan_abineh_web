@@ -23,8 +23,8 @@
 
                                             <div class="swiper-slide">
                                                 <div class="hero-thumb style1">
-                                                    <div class="bordered-mask">
-                                                        <div class="masked-image">
+                                                    <div class="">
+                                                        <div class="">
                                                             <img class="main-thumb"
                                                                 src="{{ asset('assets/img/sliders/1.jpeg') }}"
                                                                 alt="thumb" />
@@ -35,8 +35,8 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="hero-thumb style1">
-                                                    <div class="bordered-mask">
-                                                        <div class="masked-image">
+                                                    <div class="">
+                                                        <div class="">
                                                             <img class="main-thumb"
                                                                 src="{{ asset('assets/img/sliders/2.jpeg') }}"
                                                                 alt="thumb" />
@@ -47,8 +47,8 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="hero-thumb style1">
-                                                    <div class="bordered-mask">
-                                                        <div class="masked-image">
+                                                    <div class="">
+                                                        <div class="">
                                                             <img class="main-thumb"
                                                                 src="{{ asset('assets/img/sliders/3.jpeg') }}"
                                                                 alt="thumb" />
@@ -59,8 +59,8 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="hero-thumb style1">
-                                                    <div class="bordered-mask">
-                                                        <div class="masked-image">
+                                                    <div class="">
+                                                        <div class="">
                                                             <img class="main-thumb"
                                                                 src="{{ asset('assets/img/sliders/4.jpeg') }}"
                                                                 alt="thumb" />
@@ -71,8 +71,8 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="hero-thumb style1">
-                                                    <div class="bordered-mask">
-                                                        <div class="masked-image">
+                                                    <div class="">
+                                                        <div class="">
                                                             <img class="main-thumb"
                                                                 src="{{ asset('assets/img/sliders/5.jpeg') }}"
                                                                 alt="thumb" />
