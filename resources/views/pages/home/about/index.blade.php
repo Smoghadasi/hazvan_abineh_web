@@ -1,8 +1,6 @@
 @extends('layouts.main')
 @section('content')
-    <!--==============================
-                                 Breadcrumb Area
-                                 ==============================-->
+    <!--============================== Breadcrumb Area ==============================-->
     <div class="breadcrumb-wrapper">
         <div class="container-fluid">
             <div class="breadcumb border-radius" style="height: 25rem" data-bg-src="/assets/img/hero/SCROLL.jpg">
@@ -30,13 +28,17 @@
                         <div class="about-content">
                             <div class="section-title style4">
                                 <h6 class="subtitle style2 wow fadeInUp" data-wow-delay="0.3s">درباره شرکت</h6>
-                                <h2 style="padding-top: 5rem" class="title wow fadeInUp" data-wow-delay="0.6s">ما بهترین کیفیت ساخت و ساز را ارائه می
-                                    کنیم</h2>
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
-                                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
-                                </p>
-                            </div>
+                                <h2 style="padding-top: 5rem" class="title wow fadeInUp" data-wow-delay="0.6s">درباره شرکت</h2>
+                                    <p>
+                                        شرکت مهندسین مشاور هزوان ابنیه با تکیه بر دانش فنی و تجربه‌ی تخصصی همکاران خود، در
+                                        حوزه‌ی طراحی و اجرای پروژه‌های معماری و شهری فعالیت می‌کند. تیم متخصص ما با سابقه‌ای غنی
+                                        در طراحی و خلق فضاهای چندمنظوره و انسان‌محور، شامل کاربری‌های مختلفی همچون مسکونی،
+                                        تجاری، اداری، فرهنگی و همچنین فضاهای عمومی شهری، همواره به دنبال ارائه‌ی راه‌حل‌های
+                                        نوآورانه و پایدار است. ما با به‌کارگیری آخرین استانداردهای طراحی و فناوری‌های روز، در پی
+                                        تحقق اهداف کارفرمایان و بهره‌برداران هستیم و تعالی در کیفیت، عملکرد و زیبایی‌شناسی را
+                                        سرلوحه‌ی کار خود قرار داده‌ایم. همکاری مستمر با ذینفعان و درک عمیق نیازهای آن‌ها، اساس
+                                        رویکرد حرفه‌ای ماست. </p>
+                                </div>
 
                             <div class="checklist-box row gy-5 gx-17">
                                 <div class="col-lg-12">
@@ -57,11 +59,7 @@
                                 </div>
                             </div>
 
-                            <div class="contact-wrapper wow fadeInUp" data-wow-delay="0.3s">
-                                <a href="{{ route('home.about') }}" class="et-btn style4">بیشتر بخوان<i
-                                        class="fa-solid fa-arrow-left"></i></a>
 
-                            </div>
                         </div>
                     </div>
                 </div>
