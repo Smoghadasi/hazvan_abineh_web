@@ -7,15 +7,15 @@
                 <div class="hero-main-container style1 fix">
                     <div class="container">
                         <div class="row gy-5 gx-0">
-                            <div class="col-lg-7 order-2 order-lg-1">
+                            <div class="col-lg-4 order-2 order-lg-1">
                                 <div class="hero-content style1">
-                                    <div class="hero-title-wrapper">
-                                        <img src="{{ asset('assets/img/logo-basic_4.png') }}" alt="" class="img-fluid">
+                                    <div class="hero-title-wrapper" style="justify-self: center;">
+                                        <img src="{{ asset('assets/img/logo-second.jpg') }}" alt="" class="img-fluid">
                                         {{-- <a href="{{ route('home.about') }}" class="et-btn style2">درباره ما</a> --}}
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5 order-1 order-lg-2">
+                            <div class="col-lg-8 order-1 order-lg-2">
                                 <div class="slider-area heroSliderOne">
                                     <div class="swiper et-slider" id="heroSliderOne"
                                         data-slider-options='{"loop": false, "effect": "fade"}'>

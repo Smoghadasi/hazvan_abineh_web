@@ -129,7 +129,7 @@
 } */
 
 /*------------ vazir font ------------*/
-/* @font-face {
+@font-face {
 	font-family: 'vazir';
 	src: url( '../fonts/vazir/vazir-light.eot' );
 	src: url( '../fonts/vazir/vazir-light.eot?#iefix' ) format( 'embedded-opentype' ),
@@ -168,7 +168,7 @@
 		url( '../fonts/vazir/vazir-bold.ttf' ) format( 'truetype' );
 	font-weight: 700;
 	font-style: normal;
-} */
+}
 
 /*------------ yekan font ------------*/
 @font-face {
@@ -183,7 +183,7 @@
 }
 
 /*------------ dubai font ------------*/
-/* @font-face {
+@font-face {
 	font-family: 'dubai';
 	src: url( '../fonts/dubai/dubai-light.eot' );
 	src: url( '../fonts/dubai/dubai-light.eot?#iefix' ) format( 'embedded-opentype' ),
@@ -222,10 +222,10 @@
 		url( '../fonts/dubai/dubai-bold.ttf' ) format( 'truetype' );
 	font-weight: 700;
 	font-style: normal;
-} */
+}
 
 /*------------ lalezar font ------------*/
-/* @font-face {
+@font-face {
 	font-family: 'lalezar';
 	src: url( '../fonts/lalezar/lalezar.eot' );
 	src: url( '../fonts/lalezar/lalezar.eot?#iefix' ) format( 'embedded-opentype' ),
@@ -234,10 +234,10 @@
 		url( '../fonts/lalezar/lalezar.ttf' ) format( 'truetype' );
 	font-weight: normal;
 	font-style: normal;
-} */
+}
 
 /*------------ radin font ------------*/
-/* @font-face {
+@font-face {
 	font-family: 'radin';
 	src: url( '../fonts/radin/radin.eot' );
 	src: url( '../fonts/radin/radin.eot?#iefix' ) format( 'embedded-opentype' ),
@@ -246,10 +246,10 @@
 		url( '../fonts/radin/radin.ttf' ) format( 'truetype' );
 	font-weight: normal;
 	font-style: normal;
-} */
+}
 
 /*------------ binama font ------------*/
-/* @font-face {
+@font-face {
 	font-family: 'binama';
 	src: url( '../fonts/binama/binama.eot' );
 	src: url( '../fonts/binama/binama.eot?#iefix' ) format( 'embedded-opentype' ),
@@ -258,10 +258,10 @@
 		url( '../fonts/binama/binama.ttf' ) format( 'truetype' );
 	font-weight: normal;
 	font-style: normal;
-} */
+}
 
 /*------------ aramco font ------------*/
-/* @font-face {
+@font-face {
 	font-family: 'aramco';
 	src: url( '../fonts/aramco/aramco.eot' );
 	src: url( '../fonts/aramco/aramco.eot?#iefix' ) format( 'embedded-opentype' ),
@@ -270,4 +270,4 @@
 		url( '../fonts/aramco/aramco.ttf' ) format( 'truetype' );
 	font-weight: normal;
 	font-style: normal;
-} */
+}
