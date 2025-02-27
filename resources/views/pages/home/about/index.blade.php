@@ -1,13 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <!--============================== Breadcrumb Area ==============================-->
-    <div class="breadcrumb-wrapper">
-        <div class="container-fluid">
-            <div class="breadcumb border-radius" style="height: 25rem" data-bg-src="/assets/img/hero/SCROLL.jpg">
-
-            </div>
-        </div>
-    </div>
+    @include('partials.home.banner')
 
     <!--  About Section S T A R T   -->
     <section class="about-section space pb-0 fix">

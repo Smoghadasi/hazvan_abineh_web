@@ -37,13 +37,13 @@
                     </div>
                     <div class="col-auto d-none d-xl-block">
                         <div class="header-button">
-                            <button type="button" class="simple-icon sideMenuInfo sidebar-btn"> <span
+                            {{-- <button type="button" class="simple-icon sideMenuInfo sidebar-btn"> <span
                                     class="line"></span> <span class="line"></span>
-                            </button>
+                            </button> --}}
                             <select name="language" id="lang"
                                 style="border: none; font-family:arial;">
-                                <option selected value="english">En</option>
-                                <option value="farsi">Fa</option>
+                                <option selected value="english">انگلیسی</option>
+                                <option value="farsi">فارسی</option>
                             </select>
 
                         </div>

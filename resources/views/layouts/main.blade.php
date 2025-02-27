@@ -145,7 +145,7 @@
     <!--==============================
          Main End
          ==============================-->
-    @include('partials.home.footer')
+    {{-- @include('partials.home.footer') --}}
     <!-- Scroll To Top -->
     <div class="scroll-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

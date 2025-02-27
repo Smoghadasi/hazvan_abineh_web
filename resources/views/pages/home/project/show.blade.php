@@ -1,37 +1,7 @@
 @extends('layouts.main')
 @section('content')
-    <div class="breadcrumb-wrapper">
-        <div class="container-fluid">
-            <div class="breadcumb border-radius" data-bg-src="/assets/img/hero/breadcumbBg.png">
-                <div class="row d-flex align-items-center">
-                    <div class="col-xl-6 d-flex justify-content-center">
-                        <div class="page-heading">
-                            <h1 class="wow fadeInUp" data-wow-delay=".3s">جزییات پروژه</h1>
-                            <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
-                                <li>
-                                    <a href="/">
-                                        صفحه اصلی
-                                    </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-chevron-left"></i>
-                                </li>
-                                <li>
-                                    جزییات پروژه
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 d-flex justify-content-center">
-                        <div class="breadcumb-thumb">
-                            <img class="thumb" src="/assets/img/hero/breadcumbThumb.png" alt="thumb" />
-                            <div class="shape"><img src="/assets/img/shape/breadcumbShape.png" alt="shape" /></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('partials.home.banner')
+
 
     <!--  Project Details Section Start   -->
     <section class="project-details-section">
@@ -58,7 +28,9 @@
                                     <ul class="project-info">
                                         <li>
                                             <span class="label">تاریخ:</span>
-                                            <span class="value">{{ verta($project->date)->format('%d') }} {{ verta($project->date)->format('%B') }} {{ verta($project->date)->format('%Y') }}</span>
+                                            <span class="value">{{ verta($project->date)->format('%d') }}
+                                                {{ verta($project->date)->format('%B') }}
+                                                {{ verta($project->date)->format('%Y') }}</span>
                                         </li>
                                         <li>
                                             <span class="label">مشتری:</span>

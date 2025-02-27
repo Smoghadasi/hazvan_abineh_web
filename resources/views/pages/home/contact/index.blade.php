@@ -1,10 +1,7 @@
 @extends('layouts.main')
 @section('content')
-<div class="breadcrumb-wrapper">
-    <div class="container-fluid">
-        <div class="breadcumb border-radius" style="height: 25rem" data-bg-src="/assets/img/hero/SCROLL.jpg"></div>
-    </div>
-</div>
+@include('partials.home.banner')
+
 
     <div class="contact-section space fix">
         <div class="container">
